@@ -12,5 +12,4 @@ Data collection
     Well defined data sets:
 
 GIS
-
     QGIS Training
