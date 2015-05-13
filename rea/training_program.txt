@@ -1,0 +1,23 @@
+Research training program outline
+
+Day1
+
+Overview of the data we are collecting
+    Baseline data sets:
+        Well Defined sets: 
+
+            Neighborhood  boundaries
+            City Boundaries
+            Ward/Council districts
+            School districts (school board districts and attendance zones)**
+            Parcels
+            Park Boundaries
+            Voting Precints
+
+            Police Districts/Precincts
+            311 Data
+            Crime Data 
+            Zoning Districts
+            Special Tax Districts
+            Fire Districts/Emergency Service Zones
+            Permit data?
