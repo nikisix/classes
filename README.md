@@ -6,3 +6,7 @@ Engineering Subjects
     Python
     Sequel
     Git
+
+Data collection
+    Focus on 5 MSAs and 10 major cities
+    Well defined data sets:
