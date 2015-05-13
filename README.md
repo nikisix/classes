@@ -10,3 +10,7 @@ Engineering Subjects
 Data collection
     Focus on 5 MSAs and 10 major cities
     Well defined data sets:
+
+GIS
+
+    QGIS Training
