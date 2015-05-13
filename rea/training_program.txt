@@ -21,3 +21,28 @@ Overview of the data we are collecting
             Special Tax Districts
             Fire Districts/Emergency Service Zones
             Permit data?
+
+    Why do we want these?:
+        Adds value to our product
+        The more robust it is the more we have to offer
+        Predictive modeling with data
+            shape files work as containers that we can aggregate our data
+            tabular data like 311 becomes a part of the data sets for predictive modeling
+
+    Collection overview:
+        5 MSAs and 10 major cities
+        5 MSAs (TBD)
+            80% of population coverage per MSA or cap at 150 cities per MSA
+            working in clusters of cities; bordering cities should be prioritized 
+                ie; Philladelphia and all clustered cities 
+            (tentative MSAs) New York, DC, Chicago, Los Angeles,***Philadelphia**  
+        10 Major cities (TBD)
+            Gather complete data sets for these cities
+
+    Types of files (show exaples):
+    http://www.pasda.psu.edu/uci/SearchResults.aspx?searchType=originator&originator=City%20of%20Philadelphia&sessionID=3437416642015513161553
+        (see one pager from Wize)
+        WE WANT:
+            .shp - main file that stores the feature geometry; no attribues, only geometry
+            .shx - companion file to the .shp; stores position of individual IDs in the .shp file
+            .dbf - dBASE table that stores the attribute information of features
