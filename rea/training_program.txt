@@ -62,5 +62,18 @@ Overview of workflow process
             Will be on Box
             Update sheet for city when data is collected
             Should be part of daily checks 
-        Moving data to 
+        Moving data to z-drive
+            ***Waiting on Bwize wireframe***
+            discuss structure of storage
+                heirarchy
+            discuss communication channels as data is uploaded
+                what happens with the raw data
+                where is it cleaned?
+
+    Data integrity terms:
+        Clean - taking out bad values, characters, adjusting rows,..
+
+        Standardize - adjusting to fit to scale - all values should add up to 1 if they don’t find them up to one
+
+        Normalize - recombine and restructure database columns/tables 
             
