@@ -31,13 +31,17 @@ Overview of the data we are collecting
 
     Collection overview:
         5 MSAs and 10 major cities
+            split 2 MSAs per person and 5 cities per person at first
+                depending on collection - combined effort 5th MSA or single person on last MSA
         5 MSAs (TBD)
-            80% of population coverage per MSA or cap at 150 cities per MSA
+            general target goal of 80% of population coverage per MSA or cap at 150 cities per MSA
             working in clusters of cities; bordering cities should be prioritized 
                 ie; Philladelphia and all clustered cities 
             (tentative MSAs) New York, DC, Chicago, Los Angeles,***Philadelphia**  
         10 Major cities (TBD)
             Gather complete data sets for these cities
+        Most of efforts will be put towards MSAs
+            sheer number of cities in any given MSA
 
     Types of files (show exaples):
     http://www.pasda.psu.edu/uci/SearchResults.aspx?searchType=originator&originator=City%20of%20Philadelphia&sessionID=3437416642015513161553
@@ -46,3 +50,17 @@ Overview of the data we are collecting
             .shp - main file that stores the feature geometry; no attribues, only geometry
             .shx - companion file to the .shp; stores position of individual IDs in the .shp file
             .dbf - dBASE table that stores the attribute information of features
+
+Day2
+
+Overview of workflow process 
+
+    Collection & Storage:
+        Outline how to track collection progress
+            go over tracking excel sheet
+        Expectations for tracking
+            Will be on Box
+            Update sheet for city when data is collected
+            Should be part of daily checks 
+        Moving data to 
+            
