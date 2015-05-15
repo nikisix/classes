@@ -91,3 +91,42 @@ Overview of collection/storage, linux, and prelim group research
             go through tracking process
         Find contacts if cannot find data sets
             go through process of gathering contact info and sending out requests 
+
+Day3
+
+Recap, more linux if interested, individual research
+    
+    Recap:
+        why we are gathering this data
+        what we hope to accomplish with the data
+        where we are targeting
+        collection process
+        storage and tracking process
+        flow between teems (gis, eng, rea)
+
+    linux (if interested):
+        refresh on previous day's linux lesson
+        go over more exaples of using the command line
+            navigation
+            directories and files
+            revisit linux cheat sheet (get from 6) 
+
+    Independed research:
+        assign out territories (MSAs and Cities)
+        focus on one city from one of their MSAs
+            go through the process of researching, collecting, storing, and tracking independently
+            (assist and answer questions as needed)
+
+???Assessment???
+    Describe why we want to collect these data sets.
+
+    What are 2 of the MSAs and 2 major cites we are going into?
+
+    What types of files are acceptable from a GIS standpoint?
+
+    Describe the flow between the three teams (Rea, GIS, Eng).
+
+    Where is the data and tracking sheet stored?
+
+    Describe how you can start searching for a citie's GIS data.
+
