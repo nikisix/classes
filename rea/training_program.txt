@@ -53,19 +53,18 @@ Overview of the data we are collecting
 
 Day2
 
-Overview of workflow process 
+Overview of collection/storage, linux, and prelim group research 
 
     Collection & Storage:
         Outline how to track collection progress
             go over tracking excel sheet
         Expectations for tracking
-            Will be on Box
+            Will be on z-drive 
             Update sheet for city when data is collected
             Should be part of daily checks 
         Moving data to z-drive
-            ***Waiting on Bwize wireframe***
             discuss structure of storage
-                heirarchy
+                how and where to store info
             discuss communication channels as data is uploaded
                 what happens with the raw data
                 where is it cleaned?
@@ -77,3 +76,18 @@ Overview of workflow process
 
         Normalize - recombine and restructure database columns/tables 
             
+    High level linux training
+        Understand intern's familiarity with command line and linux commands
+        Discuss items in the Linux_class file 6 put together
+            share how it could be useful to use
+
+    Group research
+        Go into a city as a group (city TBD)
+        Start looking for data sets
+        Discuss some ideas of generic searches
+            Priority search - last resort search
+        Download data sets (if found)
+            upload to z-drive
+            go through tracking process
+        Find contacts if cannot find data sets
+            go through process of gathering contact info and sending out requests 
