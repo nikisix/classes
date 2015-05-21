@@ -1,0 +1,9 @@
+./training_program.txt
+Baseline data sets:
+Collection & Storage:
+Collection overview:
+Data integrity terms:
+Overview of the data we are collecting
+Overview of what we are doing
+Types of files (exaples):
+

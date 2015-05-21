@@ -2,15 +2,15 @@ Research training program outline
 
 Day1
 
-Overview of what we are doing
+[[ Overview of what we are doing ]]
     Data collection in desired 5 MSAs and top 10 cities
         What is an MSA?
             census glossary: https://www.census.gov/glossary/
         15 cities in each MSA - map of cities
             clusters around the city with highest population
 
-Overview of the data we are collecting
-    Baseline data sets:
+[[ Overview of the data we are collecting ]]
+    [[ Baseline data sets: ]]
         Well Defined sets: 
 
             Neighborhood  boundaries
@@ -36,7 +36,7 @@ Overview of the data we are collecting
             shape files work as containers that we can aggregate our data
             tabular data like 311 becomes a part of the data sets for predictive modeling
 
-    Collection overview:
+    [[ Collection overview: ]]
         5 MSAs and 10 major cities
             7 week sprint to collect as many data sets per MSA and TCs as possible
             1 week to sure up anything that is missing (if needed)
@@ -51,7 +51,7 @@ Overview of the data we are collecting
         Most of efforts will be put towards MSAs
             Number of cities in any given MSA
 
-    Types of files (exaples):
+    [[ Types of files (exaples): ]]
     http://www.pasda.psu.edu/uci/SearchResults.aspx?searchType=originator&originator=City%20of%20Philadelphia&sessionID=3437416642015513161553
         (see one pager from Wize)
         WE WANT:
@@ -63,7 +63,7 @@ Day2
 
 Overview of collection/storage, linux, and prelim research 
 
-    Collection & Storage:
+    [[ Collection & Storage: ]]
         Outline how to track collection progress
             go over tracking excel sheet
         Expectations for tracking
@@ -77,7 +77,7 @@ Overview of collection/storage, linux, and prelim research
                 what happens with the raw data
                 where and how is it cleaned?
 
-    Data integrity terms:
+    [[ Data integrity terms: ]]
         Clean - taking out bad values, characters, adjusting rows,..
 
         Standardize - adjusting to fit to scale - all values should add up to 1 if they don’t find them up to one
