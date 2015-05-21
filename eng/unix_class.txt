@@ -72,6 +72,8 @@
         command --help | less - often more convenient 
 
 [[ Users_Roles_and_Permissions ]]
+    sudo - enters a command as the root user
+    su - switch user
     chown - change the owners of the file(s)
     chmod - change read(4-bit), write(2-bit), execute(1-bit) (respectively) permissions of the file(s)
         often necessary to make a program runnable system wide, or fix the permissions of a file comming from another os

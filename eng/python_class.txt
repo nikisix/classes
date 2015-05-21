@@ -102,6 +102,14 @@
     links:
     description of file modes
     http://www.tutorialspoint.com/python/python_files_io.htm
+    r	Opens a file for reading only. The file pointer is placed at the beginning of the file. This is the default mode.
+    rb	Opens a file for reading only in binary format. The file pointer is placed at the beginning of the file. This is the default mode.
+    r+	Opens a file for both reading and writing. The file pointer placed at the beginning of the file.
+    rb+	Opens a file for both reading and writing in binary format. The file pointer placed at the beginning of the file.
+    w	Opens a file for writing only. Overwrites the file if the file exists. If the file does not exist, creates a new file for writing.
+    wb	Opens a file for writing only in binary format. Overwrites the file if the file exists. If the file does not exist, creates a new file for writing.
+    w+	Opens a file for both writing and reading. Overwrites the existing file if the file exists. If the file does not exist, creates a new file for reading and writing.
+
     http://www.codecademy.com/courses/python-intermediate-en-OGNHh/0/1
 
 [[ CSV_FILES ]]
@@ -184,6 +192,9 @@
 
 [[ COMMAND LINE INTERFACING ]]
 todo
+
+[[ HTML_PARSING ]]
+    beautiful soup examples
 
 [[ PANDAS ]]
     read_csv - thousands, delimiter
