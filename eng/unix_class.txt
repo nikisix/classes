@@ -1,0 +1,77 @@
+ _   _ _   _ _____  __
+| | | | \ | |_ _\ \/ /
+| | | |  \| || | \  / 
+| |_| | |\  || | /  \ 
+ \___/|_| \_|___/_/\_\
+
+
+[[ Navigation ]]
+    #Terminal Navigation
+        new tab: ctl+t
+        new window: ctl+n
+        move between tabs: cmd+shift+nav_arrow(left or right)
+        move between windows: shift+nav_arrow(left or right)
+      
+    #See files and folders of current directory
+        ls
+        ls -alh :see file size, type, modify(maybe it is creation) date
+            -a - show all files, even hidden ones
+            -l - show file size in bytes
+            -h - "human readable" - convert the bytes to Kb, Mb, or Gb
+    #Access directory
+        cd directory_name (tab auto complete directory name)
+    #Access home directory
+        cd
+    #Print working directory
+        pwd
+
+[[ Files and Directories ]]
+    #Make new directory
+        mkdir <directory name>
+    #Move file from old directory to new directory and rename it
+        mv dir1/filename1 dir2/filename2
+    #Rename file without moving
+        rename - mv old_name new_name
+    #Copy file into directory
+        cp file_name Directory
+    #Remove
+        rm file_name (remove file from current directory)
+        rm -r directory_name (CAUTION!! there is no undo - remove directory)
+    #Counting
+        count number of lines in file: wc -l file_name
+        count number of words in file: wc -w file_name
+    #Make a sample file
+        sample file from beginning of file: head -n(some_number) file1_name > output_file_name
+        sample file from end of file: tail -n(some_number) file1_name > output_file_name
+    #View file without opening entire file
+        less file_name
+        less navigation: ***THESE MIGHT BE WRONG DOUBLE CHECK***
+            go to line: :line_number
+            search: /search_pattern
+                next instance: n
+                previous instance: p
+            jump pages: space_bar
+
+[[ Pipeing ]]
+    #Output one command to another command 
+        command1 | command2
+        ex1. head -n1 file_name | less
+        ex2. head -n1 file_name | sed 's/,/\t/g' | less
+    #(over)Write file
+        command > file_name
+    #Append to file
+        command >> file_name
+    #Edit a file directly from standard-in
+        cat filename.txt | vi -
+
+[[ Help ]]
+    #Getting help on a command
+        man command
+        ex1. man woman 
+        command --help
+        command --help | less - often more convenient 
+
+[[ Users_Roles_and_Permissions ]]
+    chown - change the owners of the file(s)
+    chmod - change read(4-bit), write(2-bit), execute(1-bit) (respectively) permissions of the file(s)
+        often necessary to make a program runnable system wide, or fix the permissions of a file comming from another os

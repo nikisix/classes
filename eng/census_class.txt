@@ -1,0 +1,4 @@
+Overview
+intro to our storage of the census data, meta tables
+
+Uploading census data to the database

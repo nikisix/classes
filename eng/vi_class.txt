@@ -1,0 +1,66 @@
+__     _____ 
+\ \   / /_ _|
+ \ \ / / | | 
+  \ V /  | | 
+   \_/  |___|
+
+[[ Two modes - insert and normal ]]
+[[ Basic movement - h, j, k, and l
+[[ Advanced movement(6-vim) - H, J, K, and L ]]
+[[ Removing a character - x ]]
+[[ Deleting  ]]
+    delete - d
+    delete line - dd
+
+[[ undo - u ]]
+[[ redo - ctrl+r ]]
+[[ Insert new line - o and O ]]
+[[ Visual (highlight) mode  ]]
+    highlight - v 
+    line select - V 
+    block (column select) - ctrl+v 
+
+[[ Copy and Paste ]]
+    copy(yank) line - yy
+    paste line      - p
+    copy segment    - v+y 
+    paste segment   - p
+    pasting on multiple lines - ctrl+v, I, <character>, 2xESC
+
+[[ Indending multiple lines - V+>, V+<
+[[ Replacing letter under cursor - r
+[[ Repetition - .
+[[ Word movement(6-vim):  ]]
+    e - move forward a word
+    w - move back a word
+
+[[ Folding - f and F
+[[ Goto line ]]
+    beginning - gg 
+    end of file - G
+    goto line number - :<number>
+
+[[ Search. Find Replace ]]
+    find - /text with n and N
+    turn off highlighting - :nohl or (6-vim) ,n
+    find-replace - :%s/<find>/<replace>/g
+    find-replace confirm - :%s/<find>/<replace>/gc
+
+[[ Multiple files (splits) ]]
+    vertical split - :vsplit <filename>
+    horizontal split - :split <filename>
+    switching windows - ctrl+<h,j,k,l>
+
+[[ Running os commands: ]]
+    :!<linux_command>
+    running a program - :!python %   (% means current filename)
+
+[[ Plugins and Extensions ]]
+    Vundle - manage vi plugins
+    NERDTree - file browser
+    YouCompleteMe - text completion engine
+    Calendar - google calendar viewer
+
+[[ Tags ]]
+    ctags -R source_directory
+    set tags=tags; put this in your vimrc

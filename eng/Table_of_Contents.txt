@@ -1,0 +1,46 @@
+./unix_class.txt
+Files and Directories
+Help
+Navigation
+Pipeing
+Users_Roles_and_Permissions
+
+./vi_class.txt
+Advanced movement(6-vim) - H, J, K, and L
+Copy and Paste
+Deleting 
+Goto line
+Insert new line - o and O
+Multiple files (splits)
+Removing a character - x
+Running os commands:
+Search. Find Replace
+Two modes - insert and normal
+Visual (highlight) mode 
+Word movement(6-vim): 
+redo - ctrl+r
+undo - u
+
+./python_class.txt
+csv
+file i/o
+parsing
+regular expressions
+splitting
+stripping
+
+./git_class.txt
+CONFIGURE TOOLING
+CREATE REPOSITORIES
+Exercise Part 1
+Exercise Part 2
+GROUP CHANGES
+Git Class
+INSTALL GIT
+MAKE CHANGES
+REDO COMMITS
+REFACTOR FILENAMES
+REVIEW HISTORY
+SAVE FRAGMENTS
+SYNCHRONIZE CHANGES
+
