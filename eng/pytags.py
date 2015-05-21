@@ -1,4 +1,5 @@
 import re, os
+# import argparse 
 #Appending to tag file so that it plays nicely with other tag file generators you may have
 #may be necessary to delete your tagfile in between runs
 #remove these after testing

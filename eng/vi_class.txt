@@ -5,10 +5,11 @@ __     _____
    \_/  |___|
 
 [[ Two modes - insert and normal ]]
-[[ Basic movement - h, j, k, and l
+[[ Basic movement - h, j, k, and l ]]
 [[ Advanced movement(6-vim) - H, J, K, and L ]]
 [[ Removing a character - x ]]
 [[ Deleting  ]]
+    key point: whatever you delete overrites the clipboard
     delete - d
     delete line - dd
 
@@ -27,14 +28,16 @@ __     _____
     paste segment   - p
     pasting on multiple lines - ctrl+v, I, <character>, 2xESC
 
-[[ Indending multiple lines - V+>, V+<
-[[ Replacing letter under cursor - r
-[[ Repetition - .
+[[ Indending multiple lines - V+>, V+< ]]
+    Capital V gets you to visual-line-mode
+    > indents the lines
+[[ Replacing letter under cursor - r ]]
+[[ Repetition - . ]]
 [[ Word movement(6-vim):  ]]
     e - move forward a word
     w - move back a word
 
-[[ Folding - f and F
+[[ Folding - f and F ]]
 [[ Goto line ]]
     beginning - gg 
     end of file - G
@@ -54,6 +57,11 @@ __     _____
 [[ Running os commands: ]]
     :!<linux_command>
     running a program - :!python %   (% means current filename)
+
+[[ Buffers ]]
+    ~ brings up the buffer window
+    ~ <up-arrow> goes to previous buffer
+    in general, use ~ <buffer-number> <enter> to jump to any available buffer
 
 [[ Plugins and Extensions ]]
     Vundle - manage vi plugins
