@@ -2,6 +2,13 @@ Research training program outline
 
 Day1
 
+Overview of what we are doing
+    Data collection in desired 5 MSAs and top 10 cities
+        What is an MSA?
+            census glossary: https://www.census.gov/glossary/
+        15 cities in each MSA - map of cities
+            clusters around the city with highest population
+
 Overview of the data we are collecting
     Baseline data sets:
         Well Defined sets: 
@@ -31,19 +38,20 @@ Overview of the data we are collecting
 
     Collection overview:
         5 MSAs and 10 major cities
-            split 2 MSAs per person and 5 cities per person at first
-                depending on collection - combined effort 5th MSA or single person on last MSA
-        5 MSAs (TBD)
-            general target goal of 80% of population coverage per MSA or cap at 150 cities per MSA
+            7 week sprint to collect as many data sets per MSA and TCs as possible
+            1 week to sure up anything that is missing (if needed)
+            1 week to sprint though anything additional
+            (Subject to change as we move through)        
+        5 MSAs
             working in clusters of cities; bordering cities should be prioritized 
                 ie; Philladelphia and all clustered cities 
-            (tentative MSAs) New York, DC, Chicago, Los Angeles,***Philadelphia**  
-        10 Major cities (TBD)
+            (tentative MSAs) New York, DC, Chicago, Los Angeles,Philadelphia 
+        10 Major cities
             Gather complete data sets for these cities
         Most of efforts will be put towards MSAs
-            sheer number of cities in any given MSA
+            Number of cities in any given MSA
 
-    Types of files (show exaples):
+    Types of files (exaples):
     http://www.pasda.psu.edu/uci/SearchResults.aspx?searchType=originator&originator=City%20of%20Philadelphia&sessionID=3437416642015513161553
         (see one pager from Wize)
         WE WANT:
@@ -53,7 +61,7 @@ Overview of the data we are collecting
 
 Day2
 
-Overview of collection/storage, linux, and prelim group research 
+Overview of collection/storage, linux, and prelim research 
 
     Collection & Storage:
         Outline how to track collection progress
@@ -67,7 +75,7 @@ Overview of collection/storage, linux, and prelim group research
                 how and where to store info
             discuss communication channels as data is uploaded
                 what happens with the raw data
-                where is it cleaned?
+                where and how is it cleaned?
 
     Data integrity terms:
         Clean - taking out bad values, characters, adjusting rows,..
@@ -82,7 +90,7 @@ Overview of collection/storage, linux, and prelim group research
         Discuss items in the Linux_class file 6 put together
             share how it could be useful to use
 
-    Group research
+    Research together
         Go into a city as a group (city TBD)
         Start looking for data sets
         Discuss some ideas of generic searches
@@ -112,9 +120,8 @@ Recap, more linux if interested, individual research
             directories and files
             revisit linux cheat sheet (get from 6) 
 
-    Independed research:
-        assign out territories (MSAs and Cities)
-        focus on one city from one of their MSAs
+    Independent research:
+        Focus on one city from one of the MSAs
             go through the process of researching, collecting, storing, and tracking independently
             (assist and answer questions as needed)
 
