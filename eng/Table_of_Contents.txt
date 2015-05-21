@@ -7,14 +7,22 @@ Users_Roles_and_Permissions
 
 ./vi_class.txt
 Advanced movement(6-vim) - H, J, K, and L
+Basic movement - h, j, k, and l
+Buffers
 Copy and Paste
 Deleting 
+Folding - f and F
 Goto line
+Indending multiple lines - V+>, V+<
 Insert new line - o and O
 Multiple files (splits)
+Plugins and Extensions
 Removing a character - x
+Repetition - .
+Replacing letter under cursor - r
 Running os commands:
 Search. Find Replace
+Tags
 Two modes - insert and normal
 Visual (highlight) mode 
 Word movement(6-vim): 
@@ -22,12 +30,24 @@ redo - ctrl+r
 undo - u
 
 ./python_class.txt
-csv
-file i/o
-parsing
-regular expressions
-splitting
-stripping
+COMMAND LINE INTERFACING
+CSV_FILES
+DATA STRUCTURES
+DICTIONARIES
+FILE_IO
+FUNCTIONAL TOOLS
+GENERATOR EXPRESSIONS
+ITERATORS
+JOINING
+LIST COMPREHENSIONS
+LISTS
+PANDAS
+PARSING
+REGULAR EXPRESSIONS
+SETS
+SLICING
+SPLITTING
+STRIPPING
 
 ./git_class.txt
 CONFIGURE TOOLING
