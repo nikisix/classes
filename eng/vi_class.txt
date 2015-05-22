@@ -5,21 +5,30 @@ __     _____
    \_/  |___|
 
 [[ Two modes - insert and normal ]]
-[[ Basic movement - h, j, k, and l ]]
+[[ Basic movement - h, j, k, and l
+    slide your right hand fingies over one key to the left and you're officially in vi mode!
+    h - left, l - right, j - down, k - up
+
 [[ Advanced movement(6-vim) - H, J, K, and L ]]
+    H - home, L - end, J - page down, K - page up
+
 [[ Removing a character - x ]]
 [[ Deleting  ]]
-    key point: whatever you delete overrites the clipboard
     delete - d
     delete line - dd
+    delete word - dw
 
 [[ undo - u ]]
 [[ redo - ctrl+r ]]
+
 [[ Insert new line - o and O ]]
 [[ Visual (highlight) mode  ]]
     highlight - v 
     line select - V 
     block (column select) - ctrl+v 
+    replacing sections - once you have a block of text highlighted..
+        c - delete the highlighted block of text and go directly to insert mode so you can start typing right away
+        p - paste the clipboard over the highlighted block of text
 
 [[ Copy and Paste ]]
     copy(yank) line - yy
@@ -29,8 +38,6 @@ __     _____
     pasting on multiple lines - ctrl+v, I, <character>, 2xESC
 
 [[ Indending multiple lines - V+>, V+< ]]
-    Capital V gets you to visual-line-mode
-    > indents the lines
 [[ Replacing letter under cursor - r ]]
 [[ Repetition - . ]]
 [[ Word movement(6-vim):  ]]
@@ -38,30 +45,31 @@ __     _____
     w - move back a word
 
 [[ Folding - f and F ]]
-[[ Goto line ]]
+    f - folds paragraphs based on their indent level
+    F - unfolds on the same criterion
+    other fold criteria are available
+
+[[ Goto_line ]]
     beginning - gg 
     end of file - G
     goto line number - :<number>
 
-[[ Search. Find Replace ]]
+[[ Search_Find_Replace ]]
     find - /text with n and N
     turn off highlighting - :nohl or (6-vim) ,n
     find-replace - :%s/<find>/<replace>/g
     find-replace confirm - :%s/<find>/<replace>/gc
 
-[[ Multiple files (splits) ]]
+[[ Multi_Screen_Editing ]]
     vertical split - :vsplit <filename>
     horizontal split - :split <filename>
-    switching windows - ctrl+<h,j,k,l>
+    switching windows - ctrl + h,j,k, or l
+    moving windows around - <ctrl+w> + H,J,K, or L
+    vi also has tab capabilities, but I have never used them.
 
-[[ Running os commands: ]]
+[[ Running_os_commands: ]]
     :!<linux_command>
     running a program - :!python %   (% means current filename)
-
-[[ Buffers ]]
-    ~ brings up the buffer window
-    ~ <up-arrow> goes to previous buffer
-    in general, use ~ <buffer-number> <enter> to jump to any available buffer
 
 [[ Plugins and Extensions ]]
     Vundle - manage vi plugins

@@ -5,6 +5,10 @@
 |_| \_\___|\__, |\___/_/\_\
            |___/           
 
+[[ INTRO ]]
+https://automatetheboringstuff.com/chapter7/
+practice problems
+
 [[ 8_common_patterns: ]]
 http://code.tutsplus.com/tutorials/8-regular-expressions-you-should-know--net-6149
 matching a..

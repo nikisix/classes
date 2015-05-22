@@ -6,7 +6,7 @@
        |___/                       
 
 
-[[ DATA STRUCTURES ]]
+[[ DATA_STRUCTURES ]]
     all data structure examples are from: https://docs.python.org/2/tutorial/datastructures.html
 
 [[ LISTS ]]
@@ -69,7 +69,7 @@
     >>> tel.values()                                                                                                        
     [4139, 4098, 4127]  
 
-[[ LIST COMPREHENSIONS ]]
+[[ LIST_COMPREHENSIONS ]]
     "yoda talk" 
     [<what you wanna do> <what you're iterating over> <condition>]
 
@@ -85,22 +85,50 @@
     >>> [num for elem in vec for num in elem]
     [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-[[ GENERATOR EXPRESSIONS ]]
+[[ GENERATOR_EXPRESSIONS ]]
     similar to list comprehensions but are lazy
 
     for an example of more generalized generators see:
     http://python.net/~goodger/projects/pycon/2007/idiomatic/handout.html#example-generator
 
+[[ BUILT_IN_FUNCTIONS ]]
+    https://docs.python.org/2/library/functions.html
+    zip (see also itertools' izip) - combine two lists together into a list of tuples
+        >>> x = [1,2,3] 
+        >>> y = [4,5,6] 
+        >>> zip(x,y) 
+        [(1, 4), (2, 5), (3, 6)]
+
+    xrange - yields the same values as the corresponding list, without actually storing them all simultaneously
+    sum
+    round
+    sorted
+    any, all
+    del?
+    open - open a file
+    
 [[ ITERTOOLS ]]
-    #TODO
+    https://docs.python.org/2/library/itertools.html
+    product('ABCD', repeat=2)                       AA AB AC AD BA BB BC BD CA CB CC CD DA DB DC DD
+    permutations('ABCD', 2)                         AB AC AD BA BC BD CA CB CD DA DB DC
+    combinations('ABCD', 2)                         AB AC AD BC BD CD
+    combinations_with_replacement('ABCD', 2)	 	AA AB AC AD BB BC BD CC CD DD
+
+    groupby:  https://docs.python.org/2/library/itertools.html#itertools.groupby
+    compress: https://docs.python.org/2/library/itertools.html#itertools.compress
 
 [[ FILE_IO ]]
-    with open('myfile', (read 'r', write 'w', append 'a', +)) as filename:
+    first method: with open (context manager)
+    with open('filename.txt', file_mode) as filename:
         for line in filename.readlines():
             <process line>
 
+    second method: file function
+    f = file('filename.txt', filemode)
+    f.close() #DON'T FORGET TO CLOSE THE FILE
+
     links:
-    description of file modes
+    description of file modes from..
     http://www.tutorialspoint.com/python/python_files_io.htm
     r	Opens a file for reading only. The file pointer is placed at the beginning of the file. This is the default mode.
     rb	Opens a file for reading only in binary format. The file pointer is placed at the beginning of the file. This is the default mode.
@@ -177,8 +205,8 @@
         second
         third
 
-
-    [[ REGULAR EXPRESSIONS ]]
+    [[ REGULAR_EXPRESSIONS ]]
+        see regex_class.txt
         https://docs.python.org/2/library/re.html
         import re
         re.search(pattern, file)
@@ -189,15 +217,29 @@
         p.findall('12 drummers drumming, 11 pipers piping, 10 lords a-leaping')
         ['12', '11', '10']
 
+        https://automatetheboringstuff.com/chapter7/
 
-[[ COMMAND LINE INTERFACING ]]
-todo
+[[ DEBUGGING ]]
+    most GUI IDE's will have a built-in debugger of some sort
+    pudb - best command line tracing program. 
+    pdb, or pydbgr, and ipdb are also available.
 
-[[ HTML_PARSING ]]
-    beautiful soup examples
+[[ SPECIAL_TOPICS ]]
 
-[[ PANDAS ]]
-    read_csv - thousands, delimiter
-    del df[col]
-    isfinite
-    pivots
+    [[ COMMAND_LINE_INTERFACING ]]
+        import argparse
+        parser = argparse.ArgumentParser(description=discription_message)
+        parser.add_argument("-f", "--file", required=True, dest="input_file", help="file to import")
+        parser.add_argument("-m", "--max_percentage", dest="max_percentage", type=float, default=.6, help="drop rows with")
+        args = parser.parse_args()
+        args.input_file #now contains the file supplied at runtime
+
+    [[ HTML_PARSING ]]
+        beautiful soup examples
+        https://automatetheboringstuff.com/chapter11/
+
+    [[ PANDAS ]]
+        read_csv - thousands, delimiter
+        del df[col]
+        isfinite
+        pivots

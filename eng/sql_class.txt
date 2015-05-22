@@ -4,4 +4,5 @@
  ___) | |_| | |___ 
 |____/ \__\_\_____|
                    
-copy command
+http://www.sqlcourse.com/
+https://lagunita.stanford.edu/courses/DB/SQL/SelfPaced/courseware/ch-sql/seq-vid-introduction_to_sql/
