@@ -235,8 +235,11 @@
         args.input_file #now contains the file supplied at runtime
 
     [[ HTML_PARSING ]]
-        beautiful soup examples
+        pyquery
+        <nate fill this in>
+
         https://automatetheboringstuff.com/chapter11/
+        beautiful soup examples
 
     [[ PANDAS ]]
         read_csv - thousands, delimiter
