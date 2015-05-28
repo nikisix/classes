@@ -235,8 +235,10 @@
         args.input_file #now contains the file supplied at runtime
 
     [[ HTML_PARSING ]]
-        pyquery
+        [[ pyquery ]]
         <nate fill this in>
+
+        [[ scraping ]]
 
         https://automatetheboringstuff.com/chapter11/
         beautiful soup examples
