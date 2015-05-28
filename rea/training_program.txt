@@ -3,7 +3,7 @@ Research training program outline
 Day1
 
 [[ Overview of what we are doing ]]
-    Data collection in desired 5 MSAs and top 10 cities
+    Data collection in desired 5 MSAs and top 14 cities
         What is an MSA?
             census glossary: https://www.census.gov/glossary/
         15 cities in each MSA - map of cities
@@ -16,18 +16,17 @@ Day1
             Neighborhood  boundaries
             City Boundaries
             Ward/Council districts
-            School districts (school board districts and attendance zones)**
+            School board districts  
             Parcels
             Park Boundaries
             Voting Precints
-
             Police Districts/Precincts
             311 Data
             Crime Data 
             Zoning Districts
             Special Tax Districts
             Fire Districts/Emergency Service Zones
-            Permit data?
+            Permit data
 
     Why do we want these?:
         Adds value to our product
@@ -37,19 +36,18 @@ Day1
             tabular data like 311 becomes a part of the data sets for predictive modeling
 
     [[ Collection overview: ]]
-        5 MSAs and 10 major cities
-            7 week sprint to collect as many data sets per MSA and TCs as possible
-            1 week to sure up anything that is missing (if needed)
+        5 MSAs and 14 major cities
+            5 week sprint to collect as many data sets per MSA as possible
+            2 week to sure up anything that is missing (if needed)
             1 week to sprint though anything additional
             (Subject to change as we move through)        
         5 MSAs
             working in clusters of cities; bordering cities should be prioritized 
                 ie; Philladelphia and all clustered cities 
             (tentative MSAs) New York, DC, Chicago, Los Angeles,Philadelphia 
-        10 Major cities
+        14 Major cities
             Gather complete data sets for these cities
         Most of efforts will be put towards MSAs
-            Number of cities in any given MSA
 
     [[ Types of files (exaples): ]]
     http://www.pasda.psu.edu/uci/SearchResults.aspx?searchType=originator&originator=City%20of%20Philadelphia&sessionID=3437416642015513161553
@@ -58,6 +56,8 @@ Day1
             .shp - main file that stores the feature geometry; no attribues, only geometry
             .shx - companion file to the .shp; stores position of individual IDs in the .shp file
             .dbf - dBASE table that stores the attribute information of features
+        best case scenario:
+            data will be downloaded in zip format with all necessary files
 
 Day2
 
@@ -65,12 +65,13 @@ Overview of collection/storage, linux, and prelim research
 
     [[ Collection & Storage: ]]
         Outline how to track collection progress
-            go over tracking excel sheet
+            go over tracking excel sheet and Trell
         Expectations for tracking
-            Will be on z-drive 
+            Will be on Box 
             Update sheet for city when data is collected
+            Move Trello card when data is uploaded to Box
             Should be part of daily checks 
-        Moving data to z-drive
+        Moving data to Box
             discuss structure of storage
                 how and where to store info
             discuss communication channels as data is uploaded
@@ -85,18 +86,20 @@ Overview of collection/storage, linux, and prelim research
         Normalize - recombine and restructure database columns/tables 
             
     High level linux training
-        https://automatetheboringstuff.com/?utm_source=hackernewsletter&utm_medium=email&utm_term=books
         Understand intern's familiarity with command line and linux commands
         Discuss items in the Linux_class file 6 put together
-            share how it could be useful to use
+            share how it could be useful
+
+        python info:
+             https://automatetheboringstuff.com/?utm_source=hackernewsletter&utm_medium=email&utm_term=books
 
     Research together
         Go into a city as a group (city TBD)
         Start looking for data sets
         Discuss some ideas of generic searches
-            Priority search - last resort search
+            Priority search -> last resort search
         Download data sets (if found)
-            upload to z-drive
+            upload to Box
             go through tracking process
         Find contacts if cannot find data sets
             go through process of gathering contact info and sending out requests 
