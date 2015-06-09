@@ -230,21 +230,30 @@
         import argparse
         parser = argparse.ArgumentParser(description=discription_message)
         parser.add_argument("-f", "--file", required=True, dest="input_file", help="file to import")
-        parser.add_argument("-m", "--max_percentage", dest="max_percentage", type=float, default=.6, help="drop rows with")
+        parser.add_argument("-m", "--max_percentage", dest="max_percentage", type=float, default=.6, help="drop rows with..")
         args = parser.parse_args()
         args.input_file #now contains the file supplied at runtime
 
     [[ HTML_PARSING ]]
         [[ pyquery ]]
-        <nate fill this in>
 
-        [[ scraping ]]
-
-        https://automatetheboringstuff.com/chapter11/
-        beautiful soup examples
+        [[ beautiful_soup ]]
+            <nate fill this in>
+            https://automatetheboringstuff.com/chapter11/
+            beautiful soup examples
 
     [[ PANDAS ]]
         read_csv - thousands, delimiter
         del df[col]
         isfinite
         pivots
+        type_conversion
+            df[['two', 'three']] = df[['two', 'three']].astype(float)
+
+        merging - http://pandas.pydata.org/pandas-docs/stable/merging.html
+            df_merged = pd.merge(df_left, df_right, how=(left,right,inner,outer),\
+                left_on=left_column, right_on=right_column,\
+                suffixes=('_l','_r'))
+
+        drop rows with nulls in a column
+            df = df.dropna(subset=['col_with_nulls'])
