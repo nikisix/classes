@@ -4,70 +4,82 @@
 |  __/| |_| | |_| | | | (_) | | | |
 |_|    \__, |\__|_| |_|\___/|_| |_|
        |___/                       
-
+By Nick Tomasino
 
 [[ DATA_STRUCTURES ]]
     all data structure examples are from: https://docs.python.org/2/tutorial/datastructures.html
 
-[[ LISTS ]]
-    Count method tells you how many times an element appears in a list
-    has a sort method. you can override the key it compares on 
-    >>> l.append('c')                                                                                                       
-    >>> l                                                                                                                   
-    ['a', 'b', 'c', 'c'] 
-    >>> l.count('c')                                                                                                        
-    2 
+    [[ LISTS ]]
+        Count method tells you how many times an element appears in a list
+        has a sort method. you can override the key it compares on 
+        >>> l.append('c')                                                                                                       
+        >>> l                                                                                                                   
+        ['a', 'b', 'c', 'c'] 
+        >>> l.count('c')                                                                                                        
+        2 
 
-    Can use like a stack via append/pop
-    >>> l.pop()                                                                                                             
-    'c'                                                                                                                     
-    >>> l                                                                                                                   
-    ['a', 'b', 'c']
+        Can use like a stack via append/pop
+        >>> l.pop()                                                                                                             
+        'c'                                                                                                                     
+        >>> l                                                                                                                   
+        ['a', 'b', 'c']
 
-    Or a queue with pop(0)
-    ['a', 'b', 'c', 'd']                                                                                                    
-    >>> l.pop(0)                                                                                                            
-    'a'                                                                                                                     
+        Or a queue with pop(0)
+        ['a', 'b', 'c', 'd']                                                                                                    
+        >>> l.pop(0)                                                                                                            
+        'a'                                                                                                                     
 
-    [[ FUNCTIONAL TOOLS ]]
-        map, reduce, filter
-        https://docs.python.org/2/tutorial/datastructures.html#functional-programming-tools
+        [[ FUNCTIONAL TOOLS ]]
+            map, reduce, filter
+            https://docs.python.org/2/tutorial/datastructures.html#functional-programming-tools
 
-[[ SETS ]]
-    Python also includes a data type for sets. A set is an unordered collection with 
-    no duplicate elements. Basic uses include membership testing and eliminating duplicate entries. 
-    Set objects also support mathematical operations like union, intersection, difference, 
-    and symmetric difference.
+    [[ SETS ]]
+        Python also includes a data type for sets. A set is an unordered collection with 
+        no duplicate elements. Basic uses include membership testing and eliminating duplicate entries. 
+        Set objects also support mathematical operations like union, intersection, difference, 
+        and symmetric difference.
 
-    >>> # Demonstrate set operations on unique letters from two words
-    ...
-    >>> a = set('abracadabra')
-    >>> b = set('alacazam')
-    >>> a                                  # unique letters in a
-    set(['a', 'r', 'b', 'c', 'd'])
-    >>> a - b                              # letters in a but not in b
-    set(['r', 'd', 'b'])
-    >>> a | b                              # letters in either a or b
-    set(['a', 'c', 'r', 'd', 'b', 'm', 'z', 'l'])
-    >>> a & b                              # letters in both a and b
-    set(['a', 'c'])
-    >>> a ^ b                              # letters in a or b but not both
-    set(['r', 'd', 'b', 'm', 'z', 'l'])
+        >>> # Demonstrate set operations on unique letters from two words
+        ...
+        >>> a = set('abracadabra')
+        >>> b = set('alacazam')
+        >>> a                                  # unique letters in a
+        set(['a', 'r', 'b', 'c', 'd'])
+        >>> a - b                              # letters in a but not in b
+        set(['r', 'd', 'b'])
+        >>> a | b                              # letters in either a or b
+        set(['a', 'c', 'r', 'd', 'b', 'm', 'z', 'l'])
+        >>> a & b                              # letters in both a and b
+        set(['a', 'c'])
+        >>> a ^ b                              # letters in a or b but not both
+        set(['r', 'd', 'b', 'm', 'z', 'l'])
 
-[[ DICTIONARIES ]]
-    It is best to think of a dictionary as an unordered set of key: value pairs, 
-    with the requirement that the keys are unique
-    item is the (key : value)
-    >>> tel = {'jack': 4098, 'sape': 4139}
-    >>> tel['guido'] = 4127
-    >>> tel
-    {'sape': 4139, 'guido': 4127, 'jack': 4098}
-    >>> tel.items()                                                                                                         
-    [('sape', 4139), ('jack', 4098), ('guido', 4127)]                                                                       
-    >>> tel.keys()                                                                                                          
-    ['sape', 'jack', 'guido']                                                                                               
-    >>> tel.values()                                                                                                        
-    [4139, 4098, 4127]  
+    [[ DICTIONARIES ]]
+        It is best to think of a dictionary as an unordered set of key: value pairs, 
+        with the requirement that the keys are unique
+        item is the (key : value)
+        >>> tel = {'jack': 4098, 'sape': 4139}
+        >>> tel['guido'] = 4127
+        >>> tel
+        {'sape': 4139, 'guido': 4127, 'jack': 4098}
+        >>> tel.items()                                                                                                         
+        [('sape', 4139), ('jack', 4098), ('guido', 4127)]                                                                       
+        >>> tel.keys()                                                                                                          
+        ['sape', 'jack', 'guido']                                                                                               
+        >>> tel.values()                                                                                                        
+        [4139, 4098, 4127]  
+        
+    [[ STRATEGY_PATTERN ]]
+        strat = {
+                True    : 'case1',
+                False   : 'case2',
+                }
+
+        >>> [strat[i] for i in .5 < np.random.rand(10)]
+        ['case1', 'case2', 'case2', 'case1', 'case1', 'case1', 'case1', 'case1', 'case2', 'case2']
+
+    [[ DICTIONARY_EXERCISE ]]
+        Code FizzBuzz using a strategy pattern
 
 [[ LIST_COMPREHENSIONS ]]
     "yoda talk" 
@@ -104,7 +116,7 @@
     round
     sorted
     any, all
-    del?
+    del
     open - open a file
     
 [[ ITERTOOLS ]]
@@ -116,35 +128,14 @@
 
     groupby:  https://docs.python.org/2/library/itertools.html#itertools.groupby
     compress: https://docs.python.org/2/library/itertools.html#itertools.compress
+    
+    [[ ITERTOOLS_EXERCISE ]]
+        1. Generate an 8x8 grid of points. Display it using matplotlib.pyplot's scatter function.
+            (Hint: you may need to use pyplot.show())
 
-[[ FILE_IO ]]
-    first method: with open (context manager)
-    with open('filename.txt', file_mode) as filename:
-        for line in filename.readlines():
-            <process line>
-
-    second method: file function
-    f = file('filename.txt', filemode)
-    f.close() #DON'T FORGET TO CLOSE THE FILE
-
-    links:
-    description of file modes from..
-    http://www.tutorialspoint.com/python/python_files_io.htm
-    r	Opens a file for reading only. The file pointer is placed at the beginning of the file. This is the default mode.
-    rb	Opens a file for reading only in binary format. The file pointer is placed at the beginning of the file. This is the default mode.
-    r+	Opens a file for both reading and writing. The file pointer placed at the beginning of the file.
-    rb+	Opens a file for both reading and writing in binary format. The file pointer placed at the beginning of the file.
-    w	Opens a file for writing only. Overwrites the file if the file exists. If the file does not exist, creates a new file for writing.
-    wb	Opens a file for writing only in binary format. Overwrites the file if the file exists. If the file does not exist, creates a new file for writing.
-    w+	Opens a file for both writing and reading. Overwrites the existing file if the file exists. If the file does not exist, creates a new file for reading and writing.
-
-    http://www.codecademy.com/courses/python-intermediate-en-OGNHh/0/1
-
-[[ CSV_FILES ]]
-    import csv
-    csv_file = csv.reader(file, delimiter = ',')
-    for row in csv_file:
-        row[fieldnumber]
+        2. Create a list of all of the 3 letter combinations of the letters A through F, 
+        group them by their second letter, and then assign each element a 50% chance of being compressed.
+        Hint: must have sorted data for groupby!
 
 [[ PARSING ]]
 
@@ -219,38 +210,145 @@
 
         https://automatetheboringstuff.com/chapter7/
 
+[[ FILE_IO ]]
+    first method: with open (context manager)
+    with open('filename.txt', file_mode) as filename:
+        for line in filename.readlines():
+            <process line>
+
+    second method: file function
+    f = file('filename.txt', filemode)
+    f.close() #DON'T FORGET TO CLOSE THE FILE
+
+    links:
+    description of file modes from..
+    http://www.tutorialspoint.com/python/python_files_io.htm
+    r	Opens a file for reading only. The file pointer is placed at the beginning of the file. This is the default mode.
+    rb	Opens a file for reading only in binary format. The file pointer is placed at the beginning of the file. This is the default mode.
+    r+	Opens a file for both reading and writing. The file pointer placed at the beginning of the file.
+    rb+	Opens a file for both reading and writing in binary format. The file pointer placed at the beginning of the file.
+    w	Opens a file for writing only. Overwrites the file if the file exists. If the file does not exist, creates a new file for writing.
+    wb	Opens a file for writing only in binary format. Overwrites the file if the file exists. If the file does not exist, creates a new file for writing.
+    w+	Opens a file for both writing and reading. Overwrites the existing file if the file exists. If the file does not exist, creates a new file for reading and writing.
+
+    http://www.codecademy.com/courses/python-intermediate-en-OGNHh/0/1
+
+[[ CSV_FILES ]]
+    import csv
+    csv_file = csv.reader(file, delimiter = ',')
+    for row in csv_file:
+        row[fieldnumber]
+
+    See examples/extract.py for an example
+
+    [[ FILE_EXERCICES ]]
+        Read in a file in and print out each line beginning with the line number and a tab.
+        Read in a file in binary mode and print out each byte after incrementing it by one.
+        Read in a csv file and print out a subset of fields delimited by tabs instead of commas
+
 [[ DEBUGGING ]]
     most GUI IDE's will have a built-in debugger of some sort
+    (pdb, or pydbgr, and ipdb are also available.)
     pudb - best command line tracing program. 
-    pdb, or pydbgr, and ipdb are also available.
+        sudo pip install pudb
+
+    [[ DEBUGING_EXERCISE ]]
+        Download and install pudb 
+        Use pudb to set breakpoints in a program, step through the code, while examining certain varibles
 
 [[ SPECIAL_TOPICS ]]
 
-    [[ COMMAND_LINE_INTERFACING ]]
-        import argparse
-        parser = argparse.ArgumentParser(description=discription_message)
-        parser.add_argument("-f", "--file", required=True, dest="input_file", help="file to import")
-        parser.add_argument("-m", "--max_percentage", dest="max_percentage", type=float, default=.6, help="drop rows with..")
-        args = parser.parse_args()
-        args.input_file #now contains the file supplied at runtime
+[[ COMMAND_LINE_INTERFACING ]]
+    import argparse
+    parser = argparse.ArgumentParser(description=discription_message)
+    parser.add_argument("-f", "--file", required=True, dest="input_file", help="file to import")
+    parser.add_argument("-m", "--max_percentage", dest="max_percentage", type=float, default=.6, help="drop rows with..")
+    args = parser.parse_args()
+    args.input_file #now contains the file supplied at runtime
 
-    [[ HTML_PARSING ]]
-        [[ pyquery ]]
+[[ CLI_EXCERCISE ]]
+    Design a simple program that accepts command line arguements for a file to read in, whether or not to print it
+    and whether or not to add line numbers to the front of it.
 
-        [[ beautiful_soup ]]
-            <nate fill this in>
-            https://automatetheboringstuff.com/chapter11/
-            beautiful soup examples
+[[ HTML_PARSING ]]
+    [[ pyquery ]]
 
-    [[ PANDAS ]]
-        read_csv - thousands, delimiter
+    [[ beautiful_soup ]]
+        <nate fill this in>
+        https://automatetheboringstuff.com/chapter11/
+        beautiful soup examples
+
+    [[ HTML_EXERCISES ]]
+        Scrape a web page and parse out particular fields of interest. Craigslist is a good one to start with.
+
+
+[[ NUMPY ]]
+#Generate random sequences
+>>> np.random.rand(3,2)
+array([[ 0.78782888,  0.13322582],
+       [ 0.05043413,  0.16699798],
+       [ 0.68784864,  0.45938167]])
+
+[[ PANDAS ]]
+    [[ READ_CSV ]]
+        d=pd.read_csv(input_file, thousands=',')
+
+    [[ EXCEL_WRITING ]]
+        writer = pd.ExcelWriter('output.xlsx', engine='xlsxwriter')
+        df_out.transpose().to_excel(writer,'Sheet1')
+        writer.save()
+
+    [[ DELETE_A_COLUMN ]]
         del df[col]
-        isfinite
-        pivots
-        type_conversion
-            df[['two', 'three']] = df[['two', 'three']].astype(float)
 
-        merging - http://pandas.pydata.org/pandas-docs/stable/merging.html
+    [[ INPUT_DATA_VALIDATION ]]
+        #if all data in a frame isn't numeric, it this will catch the error, then iterate through all columns
+        #
+        if  sum(blk_pop_perc)<=0 or sum(blk_house_perc)<=0 or sum(blk_houseunits_perc)<=0:
+            raise Exception("a blk_perc column is all zeros")
+        try:
+            all(np.isfinite(d))
+        except TypeError:
+            try:
+                for c in d.columns:    
+                    print c
+                    print all(np.isfinite(d[c]))
+            except TypeError:
+                print 'Error with column: '+c+'\nIt must be composed of all numbers. Try adding it to your deleted columns'
+                sys.exit(2)
+
+    [[ PIVOT ]]
+        #MULTI_INDEX
+        d.set_index(['group','Demographics'], inplace=True)
+        
+        #GROUPBY SINGLE_INDEX from groupby operation
+        df.groupby(by = ['Created By']).sum().head()
+
+        #GROUPBY MULTI_INDEX Create a MULTI_INDEX from a groupby operation
+        df['Created Date'] = pd.to_datetime(df['Created Date'], format = '%m/%d/%Y')
+        groups = df.groupby(by = ['Created By', pd.TimeGrouper(freq='M', key='Created Date')]).sum()
+
+        #CROSSTAB - regroup dataframe into a new format
+        pd.crosstab(index = df['Created By'],
+            columns = df['Created Date'],
+            values = df['Amount'],
+            aggfunc = np.sum )
+
+        #MELT and PIVOT TABLE example (see pivot examples/pivot_salesman.py)
+        df['Created Date'] = pd.to_datetime(df['Created Date'], format = '%m/%d/%Y')
+        melted = pd.melt(df, id_vars = ['Created Date', 'Created By'], value_vars = ['Amount', 'opp_count'])
+        final = melted.pivot_table(
+                       index = 'Created By',
+                       columns = [pd.TimeGrouper('M', key = 'Created Date'), 'variable'],
+                       aggfunc = np.sum,
+                       values = 'value'
+                )
+
+    [[ TYPE_CONVERSION ]]
+        df[['two', 'three']] = df[['two', 'three']].astype(float)
+
+    [[ MERGING ]]
+        http://pandas.pydata.org/pandas-docs/stable/merging.html
             df_merged = pd.merge(df_left, df_right, how=(left,right,inner,outer),\
                 left_on=left_column, right_on=right_column,\
                 suffixes=('_l','_r'))
@@ -258,6 +356,8 @@
         drop rows with nulls in a column
             df = df.dropna(subset=['col_with_nulls'])
 
+    [[ COLUMN_TRANFORM ]]
+        Apply a function to each row in dataframe using map and lamdas
         #replace '123-345' with mean([123,345])
         d.BlockRange = d.BlockRange.map(
             lambda x: int(
@@ -266,6 +366,30 @@
                 )
             )
         )
-        
+
+    [[ COLUMN_MERGING ]]
         #join multiple columns into the same column
         d['Address'] = pd.DataFrame([' '.join([str(i[0]),i[1],i[2]]) for i in zip(d.BlockRange, d.StreetName, d.Type)], index=d.index)
+
+    [[ PANDAS_EXERCISES ]]
+        Input Validation
+            1. Create a data frame of random data
+            2. Replace some numeric fields in the frame with strings
+            3. Run the INPUT VALIDATION
+        
+        Merge
+            Join two data frames together on an identical columns
+        
+        Column Transform
+            Square each number in a column
+        
+        Pivoting
+            Mess around with pivot_salesman.py in examples
+
+
+[[ MATPLOTLIB ]]
+http://pandas.pydata.org/pandas-docs/version/0.15.0/visualization.html
+
+#Will show matplots if you're seeing something like: <matplotlib.axes.AxesSubplot object at 0x109c8ef50>
+>>> import matplotlib.pyplot as plt
+>>> plt.show()

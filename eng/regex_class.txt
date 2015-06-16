@@ -4,6 +4,7 @@
 |  _ <  __/ (_| |  __/>  < 
 |_| \_\___|\__, |\___/_/\_\
            |___/           
+By Nick Tomasino
 
 [[ INTRO ]]
 https://automatetheboringstuff.com/chapter7/

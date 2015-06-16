@@ -6,3 +6,4 @@
                    
 http://www.sqlcourse.com/
 https://lagunita.stanford.edu/courses/DB/SQL/SelfPaced/courseware/ch-sql/seq-vid-introduction_to_sql/
+http://www.w3schools.com/sql/

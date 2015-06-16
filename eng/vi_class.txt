@@ -3,6 +3,7 @@ __     _____
  \ \ / / | | 
   \ V /  | | 
    \_/  |___|
+By NickiVI
 
 [[ Two modes - insert and normal ]]
 [[ Basic movement - h, j, k, and l

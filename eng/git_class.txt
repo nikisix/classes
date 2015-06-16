@@ -3,6 +3,7 @@
 | |  _| | __|
 | |_| | | |_ 
  \____|_|\__|
+By Nick Tomasino
 
 [[ Git Class ]]
 Another Cheat Sheet

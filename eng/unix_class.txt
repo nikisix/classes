@@ -3,7 +3,7 @@
 | | | |  \| || | \  / 
 | |_| | |\  || | /  \ 
  \___/|_| \_|___/_/\_\
-
+By Nick Tomasino
 
 [[ Navigation ]]
     #Terminal Navigation
@@ -26,6 +26,8 @@
         pwd
 
 [[ Files and Directories ]]
+    #Make new file
+        touch newfile
     #Make new directory
         mkdir <directory name>
     #Move file from old directory to new directory and rename it
@@ -40,12 +42,12 @@
     #Counting
         count number of lines in file: wc -l file_name
         count number of words in file: wc -w file_name
-    #Make a sample file
+    #Take a sample file
         sample file from beginning of file: head -n(some_number) file1_name > output_file_name
         sample file from end of file: tail -n(some_number) file1_name > output_file_name
     #View file without opening entire file
         less file_name
-        less navigation: ***THESE MIGHT BE WRONG DOUBLE CHECK***
+        less navigation: 
             go to line: :line_number
             search: /search_pattern
                 next instance: n
@@ -77,3 +79,22 @@
     chown - change the owners of the file(s)
     chmod - change read(4-bit), write(2-bit), execute(1-bit) (respectively) permissions of the file(s)
         often necessary to make a program runnable system wide, or fix the permissions of a file comming from another os
+
+[[ Processes ]]
+    command & - runs the command in a background process
+    fg - ("foreground") brings background processes to the foreground
+    ps "process" - shows info about processes
+    pstree - like ps but sweeter
+    kill -9 processID - kill a process. (-9 means for realsies)
+    top/htop - monitor running processes
+
+[[ Networking ]]
+    ping hostname/ipaddress - tests connectivity between computers
+    netstat - network statistics and port reporting
+    ssh user@host_ip
+
+[[ Quiting Computing ]]
+    Getting good at these and other commands can be addictive.
+    These break the cycle should it get out of hand:
+    1. rm -rf / - recursively deletes the root directory
+    2. emacs    - recursively deletes the root desire to compute
