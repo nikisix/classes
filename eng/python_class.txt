@@ -12,11 +12,15 @@ By Nick Tomasino
     [[ LISTS ]]
         Count method tells you how many times an element appears in a list
         has a sort method. you can override the key it compares on 
+        >>> l = ['a','b','c']
         >>> l.append('c')                                                                                                       
         >>> l                                                                                                                   
         ['a', 'b', 'c', 'c'] 
         >>> l.count('c')                                                                                                        
         2 
+
+        #help tells us the methods of an object
+        >>> help(l)
 
         Can use like a stack via append/pop
         >>> l.pop()                                                                                                             
@@ -116,11 +120,18 @@ By Nick Tomasino
     round
     sorted
     any, all
-    del
+    del 
     open - open a file
     
 [[ ITERTOOLS ]]
     https://docs.python.org/2/library/itertools.html
+
+    import itertools as it
+    Note: These functions return GENERATOR_EXPRESSIONS, cast them as a list to see what's inside
+    i.e. 
+    g = it.product('ABCD', repeat=2)
+    list(g)
+
     product('ABCD', repeat=2)                       AA AB AC AD BA BB BC BD CA CB CC CD DA DB DC DD
     permutations('ABCD', 2)                         AB AC AD BA BC BD CA CB CD DA DB DC
     combinations('ABCD', 2)                         AB AC AD BC BD CD
@@ -131,11 +142,12 @@ By Nick Tomasino
     
     [[ ITERTOOLS_EXERCISE ]]
         1. Generate an 8x8 grid of points. Display it using matplotlib.pyplot's scatter function.
-            (Hint: you may need to use pyplot.show())
+            Hint: you may need to use pyplot.show()
+            import matplotlib.pyplot as plt
 
         2. Create a list of all of the 3 letter combinations of the letters A through F, 
-        group them by their second letter, and then assign each element a 50% chance of being compressed.
-        Hint: must have sorted data for groupby!
+            group them by their second letter, and then assign each element a 50% chance of being compressed.
+            Hint: must have sorted data for groupby!
 
 [[ PARSING ]]
 
@@ -243,8 +255,15 @@ By Nick Tomasino
 
     [[ FILE_EXERCICES ]]
         Read in a file in and print out each line beginning with the line number and a tab.
-        Read in a file in binary mode and print out each byte after incrementing it by one.
+        Read in the examples/readme file in binary mode and print out each byte after incrementing it by one.
         Read in a csv file and print out a subset of fields delimited by tabs instead of commas
+
+    [[ PARSING_EXCERCISES ]]
+        1. Increment the year of the dates in examples/head-wa.txt, join the dates back together with dashes instead of slashes
+        2. Using examples/extract_pandas.csv, column Offense_Type, print out a list of all of the offense types where 
+            each offense occurs no more than once
+        3. Repeat #2 on the Premise
+        4. Using the file examples/extract_pandas.csv and the Premise column: Make a list of words between parentheses
 
 [[ DEBUGGING ]]
     most GUI IDE's will have a built-in debugger of some sort
@@ -281,7 +300,6 @@ By Nick Tomasino
     [[ HTML_EXERCISES ]]
         Scrape a web page and parse out particular fields of interest. Craigslist is a good one to start with.
 
-
 [[ NUMPY ]]
 #Generate random sequences
 >>> np.random.rand(3,2)
@@ -314,8 +332,32 @@ array([[ 0.78782888,  0.13322582],
                     print c
                     print all(np.isfinite(d[c]))
             except TypeError:
-                print 'Error with column: '+c+'\nIt must be composed of all numbers. Try adding it to your deleted columns'
+                print 'Error with column: '+c+'\nIt must be composed of all numbers.'
                 sys.exit(2)
+
+
+    [[ TYPE_CONVERSION ]]
+        df[['two', 'three']] = df[['two', 'three']].astype(float)
+
+    [[ MERGING ]]
+        http://pandas.pydata.org/pandas-docs/stable/merging.html
+            df_merged = pd.merge(df_left, df_right, how=(left,right,inner,outer),\
+                left_on=left_column, right_on=right_column,\
+                suffixes=('_l','_r'))
+
+        drop rows with nulls in a column
+            df = df.dropna(subset=['col_with_nulls'])
+
+    [[ COLUMN_TRANFORM ]]
+        Apply a function to each row in dataframe using map and lamdas
+        d.column1.map(
+            lambda x: x+1
+        )
+
+
+    [[ COLUMN_MERGING ]]
+        #join multiple columns into the same column
+        d['Address'] = pd.DataFrame([' '.join([str(i[0]),i[1],i[2]]) for i in zip(d.BlockRange, d.StreetName, d.Type)], index=d.index)
 
     [[ PIVOT ]]
         #MULTI_INDEX
@@ -344,45 +386,19 @@ array([[ 0.78782888,  0.13322582],
                        values = 'value'
                 )
 
-    [[ TYPE_CONVERSION ]]
-        df[['two', 'three']] = df[['two', 'three']].astype(float)
-
-    [[ MERGING ]]
-        http://pandas.pydata.org/pandas-docs/stable/merging.html
-            df_merged = pd.merge(df_left, df_right, how=(left,right,inner,outer),\
-                left_on=left_column, right_on=right_column,\
-                suffixes=('_l','_r'))
-
-        drop rows with nulls in a column
-            df = df.dropna(subset=['col_with_nulls'])
-
-    [[ COLUMN_TRANFORM ]]
-        Apply a function to each row in dataframe using map and lamdas
-        #replace '123-345' with mean([123,345])
-        d.BlockRange = d.BlockRange.map(
-            lambda x: int(
-                np.mean(
-                    [int(i) for i in x.split('-')]
-                )
-            )
-        )
-
-    [[ COLUMN_MERGING ]]
-        #join multiple columns into the same column
-        d['Address'] = pd.DataFrame([' '.join([str(i[0]),i[1],i[2]]) for i in zip(d.BlockRange, d.StreetName, d.Type)], index=d.index)
-
     [[ PANDAS_EXERCISES ]]
         Input Validation
-            1. Create a data frame of random data
+            1. Create a data frame of random data (Hint, leverage numpy)
             2. Replace some numeric fields in the frame with strings
             3. Run the INPUT VALIDATION
-        
+
         Merge
             Join two data frames together on an identical columns
         
-        Column Transform
-            Square each number in a column
-        
+        COLUMN_TRANFORM
+            1. Square each number in a column
+            2. Read in excercises/jan15.csv and take replace the BlockRange column with the mean of the range
+
         Pivoting
             Mess around with pivot_salesman.py in examples
 
