@@ -209,7 +209,7 @@ By Nick Tomasino
         third
 
     [[ REGULAR_EXPRESSIONS ]]
-        see regex_class.txt
+        See ./regex_class.txt
         https://docs.python.org/2/library/re.html
         import re
         re.search(pattern, file)
@@ -255,14 +255,14 @@ By Nick Tomasino
 
     [[ FILE_EXERCICES ]]
         Read in a file in and print out each line beginning with the line number and a tab.
-        Read in the examples/readme file in binary mode and print out each byte after incrementing it by one.
+        Read in the examples/encoded_message.txt file in binary mode and print out each byte after incrementing it by one.
         Read in a csv file and print out a subset of fields delimited by tabs instead of commas
 
     [[ PARSING_EXCERCISES ]]
         1. Increment the year of the dates in examples/head-wa.txt, join the dates back together with dashes instead of slashes
         2. Using examples/extract_pandas.csv, column Offense_Type, print out a list of all of the offense types where 
-            each offense occurs no more than once
-        3. Repeat #2 on the Premise
+            each offense occurs no more than once. (Hint: Think back to DATA_STRUCTURES)
+        3. Repeat #2 on the Premise field of examples/extract_pandas.csv
         4. Using the file examples/extract_pandas.csv and the Premise column: Make a list of words between parentheses
 
 [[ DEBUGGING ]]
@@ -286,14 +286,13 @@ By Nick Tomasino
     args.input_file #now contains the file supplied at runtime
 
 [[ CLI_EXCERCISE ]]
-    Design a simple program that accepts command line arguements for a file to read in, whether or not to print it
+    Design a simple program that accepts command line arguements for a file to read in, which lines to print 
     and whether or not to add line numbers to the front of it.
 
 [[ HTML_PARSING ]]
     [[ pyquery ]]
 
     [[ beautiful_soup ]]
-        <nate fill this in>
         https://automatetheboringstuff.com/chapter11/
         beautiful soup examples
 
@@ -390,7 +389,7 @@ array([[ 0.78782888,  0.13322582],
         Input Validation
             1. Create a data frame of random data (Hint, leverage numpy)
             2. Replace some numeric fields in the frame with strings
-            3. Run the INPUT VALIDATION
+            3. Run the INPUT_DATA_VALIDATION
 
         Merge
             Join two data frames together on an identical columns
