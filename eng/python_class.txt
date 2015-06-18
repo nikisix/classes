@@ -172,6 +172,7 @@ By Nick Tomasino
         'first, second, third ' 
         >>>[i.strip() for i in string.split(',')]                                                                              
         ['first', 'second', 'third']
+        things to split on: \t, \n or \r or \r\n, 
 
     [[ SLICING ]]
         usually you just use [start:stop]
@@ -254,16 +255,23 @@ By Nick Tomasino
     See examples/extract.py for an example
 
     [[ FILE_EXERCICES ]]
-        Read in a file in and print out each line beginning with the line number and a tab.
-        Read in the examples/encoded_message.txt file in binary mode and print out each byte after incrementing it by one.
-        Read in a csv file and print out a subset of fields delimited by tabs instead of commas
+        Use examples/head-wa.csv
+        1.Read in a file in and print out each line beginning with the line number and a tab.
+            1   line1
+            2   line2
+            ...
+        2.Read in the examples/encoded_message.txt file in binary mode and print out each byte after incrementing it by one.
+        3.Read in a csv file and print out the first, third, and fourth fields delimited by tabs instead of commas
+            i.e. take a file of format:     field1, field2, field3, field4
+            and change it too:              field1    field3
 
     [[ PARSING_EXCERCISES ]]
         1. Increment the year of the dates in examples/head-wa.txt, join the dates back together with dashes instead of slashes
         2. Using examples/extract_pandas.csv, column Offense_Type, print out a list of all of the offense types where 
             each offense occurs no more than once. (Hint: Think back to DATA_STRUCTURES)
+            Bonus: print out the nuber of times each crime occurs.
         3. Repeat #2 on the Premise field of examples/extract_pandas.csv
-        4. Using the file examples/extract_pandas.csv and the Premise column: Make a list of words between parentheses
+        4. Using the file examples/extract_pandas.csv and the Premise column: Make a list of unique phrases between parentheses
 
 [[ DEBUGGING ]]
     most GUI IDE's will have a built-in debugger of some sort
@@ -308,21 +316,33 @@ array([[ 0.78782888,  0.13322582],
 
 [[ PANDAS ]]
     [[ READ_CSV ]]
-        d=pd.read_csv(input_file, thousands=',')
+        d=pd.read_csv(input_file, thousands=',', sep=',')
+        d.columns = ['col1','col2','col3','col4']
 
     [[ EXCEL_WRITING ]]
         writer = pd.ExcelWriter('output.xlsx', engine='xlsxwriter')
         df_out.transpose().to_excel(writer,'Sheet1')
         writer.save()
 
-    [[ DELETE_A_COLUMN ]]
-        del df[col]
+    [[ CLEANUP ]]
+        #delete all rows whose col1 value is 0
+        df = df[df.col1 != 0]
+
+        #delete a column
+        del df[col1]
+
+        #drop all null values (if ANY column in a row has a null in it, the entire row get's dropped)
+        df.dropna()
+
+        #drop rows with nulls in a column
+        df = df.dropna(subset=['col_with_nulls'])
+
+        #drop duplicate entries in specified cols
+        df = df.drop_duplicates(subset=['col1', 'col2'], take_last=False, inplace=False)
 
     [[ INPUT_DATA_VALIDATION ]]
         #if all data in a frame isn't numeric, it this will catch the error, then iterate through all columns
         #
-        if  sum(blk_pop_perc)<=0 or sum(blk_house_perc)<=0 or sum(blk_houseunits_perc)<=0:
-            raise Exception("a blk_perc column is all zeros")
         try:
             all(np.isfinite(d))
         except TypeError:
@@ -334,7 +354,6 @@ array([[ 0.78782888,  0.13322582],
                 print 'Error with column: '+c+'\nIt must be composed of all numbers.'
                 sys.exit(2)
 
-
     [[ TYPE_CONVERSION ]]
         df[['two', 'three']] = df[['two', 'three']].astype(float)
 
@@ -344,15 +363,12 @@ array([[ 0.78782888,  0.13322582],
                 left_on=left_column, right_on=right_column,\
                 suffixes=('_l','_r'))
 
-        drop rows with nulls in a column
-            df = df.dropna(subset=['col_with_nulls'])
 
     [[ COLUMN_TRANFORM ]]
         Apply a function to each row in dataframe using map and lamdas
         d.column1.map(
             lambda x: x+1
         )
-
 
     [[ COLUMN_MERGING ]]
         #join multiple columns into the same column
@@ -386,21 +402,23 @@ array([[ 0.78782888,  0.13322582],
                 )
 
     [[ PANDAS_EXERCISES ]]
-        Input Validation
+        [[ INPUT_DATA_VALIDATION_EXERCISE ]]
             1. Create a data frame of random data (Hint, leverage numpy)
             2. Replace some numeric fields in the frame with strings
             3. Run the INPUT_DATA_VALIDATION
 
-        Merge
-            Join two data frames together on an identical columns
+        [[ MERGE_EXERCISE ]]
+            1. Join two data frames together on an comparable columns. 
+            You can Join jan15 and extract_pandas.csv on date for this exercise
         
-        COLUMN_TRANFORM
+        [[ COLUMN_TRANFORM_EXERCISE ]]
             1. Square each number in a column
-            2. Read in excercises/jan15.csv and take replace the BlockRange column with the mean of the range
+            2. Read in excercises/jan15.csv and replace the BlockRange column with the mean of the range
+            3. Redo PARSING_EXCERCISES exercise 1 using pandas column transforms(included below for convenience)
+                Increment the year of the dates in examples/head-wa.txt, join the dates back together with dashes instead of slashes
 
-        Pivoting
+        [[ PIVOT_EXERCISE ]]
             Mess around with pivot_salesman.py in examples
-
 
 [[ MATPLOTLIB ]]
 http://pandas.pydata.org/pandas-docs/version/0.15.0/visualization.html
