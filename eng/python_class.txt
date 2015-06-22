@@ -342,16 +342,16 @@ array([[ 0.78782888,  0.13322582],
 
     [[ INPUT_DATA_VALIDATION ]]
         #if all data in a frame isn't numeric, it this will catch the error, then iterate through all columns
-        #
-        try:
-            all(np.isfinite(d))
-        except TypeError:
+        def validate_data(df):
             try:
-                for c in d.columns:    
-                    print c
-                    print all(np.isfinite(d[c]))
+                all(np.isfinite(df))
             except TypeError:
-                print 'Error with column: '+c+'\nIt must be composed of all numbers.'
+                for c in df.columns:    
+                    try:
+                            print c
+                            print all(np.isfinite(df[c]))
+                    except TypeError:
+                        print 'Error with column: '+c+'\nIt must be composed of all numbers.'
                 sys.exit(2)
 
     [[ TYPE_CONVERSION ]]

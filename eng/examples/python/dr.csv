@@ -1,0 +1,53 @@
+,Date,Hour,Offense Type,Beat,Premise,BlockRange,StreetName,Type,Suffix,# offenses
+0,1/24/15,8,Auto Theft,10H10,Residence or House,2100-2199,CANAL,ST,-,1
+1,1/25/15,13,Theft,10H10,Bus Stop,3900-3999,CANAL,ST,-,1
+2,1/26/15,5,Auto Theft,10H10,Apartment,2300-2399,COMMERCE,ST,-,1
+4,1/27/15,18,Theft,10H10,"Multi-Plex Home (Duplex,Triplex Etc.)",5600-5699,SHERMAN,-,-,1
+6,1/31/15,16,Theft,10H10,"Road, Street, or Sidewalk",3300-3399,ENGELKE,-,-,1
+7,1/2/15,22,Auto Theft,10H10,Restaurant or Cafeteria Parking Lot,2800-2899,NAVIGATION,-,-,1
+8,1/4/15,16,Burglary,10H10,Residence or House,300-399,BRYAN,-,N,1
+9,1/5/15,1,Burglary,10H10,Residence or House,6200-6299,INDUSTRIAL,WAY,-,1
+10,1/6/15,10,Auto Theft,10H10,Auto Repair,3900-3999,CANAL,ST,-,1
+11,1/7/15,0,Robbery,10H10,"Road, Street, or Sidewalk",2100-2199,CANAL,ST,-,1
+12,1/8/15,10,Auto Theft,10H10,Residence or House,200-299,LOCKWOOD,DR,-,1
+14,1/10/15,9,Burglary,10H10,Auto Repair,100-199,MILBY,ST,N,1
+15,1/11/15,20,Robbery,10H10,Restaurant or Cafeteria,3400-3499,NAVIGATION,-,-,1
+16,1/12/15,9,Theft,10H10,Maintenance or Building Services,5800-5899,TEXAS,ST,-,1
+19,1/13/15,0,Burglary,10H10,Vehicle/Auto Sales/Lease/Auto Parts Store,4600-4699,CANAL,ST,-,1
+21,1/15/15,9,Burglary,10H10,"Factory, Manufacturing, or Industrial",100-199,LATHAM,ST,N,1
+23,1/16/15,17,Auto Theft,10H10,Other Parking Lot,3800-3899,HARRISBURG,-,-,1
+25,1/19/15,19,Theft,10H10,Vehicle/Auto Sales/Lease/Auto Parts Store,4700-4799,HARRISBURG,-,-,1
+26,1/20/15,12,Theft,10H10,Bar or Night Club,3000-3099,CANAL,ST,-,1
+27,1/21/15,8,Burglary,10H10,Commercial Building,300-399,VELASCO,-,-,1
+30,1/30/15,22,Robbery,10H20,"Road, Street, or Sidewalk",5000-5099,PARK,DR,-,1
+32,1/29/15,0,Theft,10H20,"Road, Street, or Sidewalk",4400-4499,WALKER,ST,-,1
+36,1/23/15,16,Theft,10H20,Residence or House,5100-5199,BELL,ST,-,1
+42,1/3/15,15,Burglary,10H20,Convenience Store,5300-5399,POLK,-,-,1
+53,1/17/15,14,Theft,10H20,Commercial Parking Lot or Garage,2100-2199,ERNESTINE,ST,-,1
+55,1/18/15,6,Burglary,10H20,Bar or Night Club,800-899,DUMBLE,ST,-,1
+69,1/28/15,14,Rape,10H30,"Vacant Single Occ Resd(House,Townhs,Dplex)",1700-1799,ADEN MIST,DR,-,1
+76,9/28/14,11,Theft,10H30,Auto Repair,3600-3699,GULF,FWY,-,1
+77,12/27/14,16,Burglary,10H30,Residence or House,1700-1799,ADEN MIST,DR,-,1
+78,12/31/14,1,Theft,10H30,Commercial Parking Lot or Garage,900-999,ST EMANUEL,-,-,1
+82,1/1/15,9,Robbery,10H30,"Road, Street, or Sidewalk",2000-2099,SCOTT,-,-,1
+95,1/9/15,9,Theft,10H30,"Road, Street, or Sidewalk",1200-1299,PALMER,ST,-,1
+110,10/18/13,9,Theft,10H40,"Road, Street, or Sidewalk",3000-3099,CAROLINE,ST,-,1
+111,12/1/14,18,Theft,10H40,Residence or House,1700-1799,HOLMAN,-,-,1
+193,1/14/15,16,Theft,10H40,"Road, Street, or Sidewalk",2100-2199,MAIN,ST,-,1
+216,1/22/15,9,Theft,10H50,Miscellaneous Business (Non-Specific),2100-2199,DOWLING,ST,-,1
+235,2/1/13,14,Theft,10H50,"Other, Unknown, or Not Listed",UNK,DOWLING,ST,-,1
+290,11/25/14,13,Aggravated Assault,10H60,Residence or House,3800-3899,WENTWORTH,-,-,1
+401,12/6/14,17,Theft,10H70,,6200-6299,HERMANN PARK,-,-,1
+402,12/21/14,15,Burglary,10H70,Apartment,6300-6399,ALMEDA,RD,-,1
+403,12/22/14,11,Theft,10H70,Hospital,6500-6599,FANNIN,ST,-,1
+404,12/23/14,10,Theft,10H70,Apartment Parking Lot,6300-6399,ALMEDA,RD,-,1
+405,12/24/14,12,Theft,10H70,Apartment,UNK,HERMANN MUSEUM,CIR,-,1
+490,12/30/14,15,Theft,10H80,"Electronics Store, Electrical Supplies",6000-6099,KIRBY,DR,-,1
+492,12/2/07,15,Theft,10H80,"Parks and Recreation, Zoo, Swimming Pool",1000-1099,BISSONNET,ST,-,1
+626,12/8/14,16,Theft,11H10,Department or Discount Store,7000-7099,LAWNDALE,-,-,1
+721,12/28/14,20,Aggravated Assault,11H20,Apartment,7400-7499,PLUM CREEK,DR,-,1
+723,9/14/12,12,Theft,11H20,Warehouse,8100-8199,LAWNDALE,-,-,1
+882,12/15/14,11,Theft,12D10,Residence or House,10400-10499,KINSDALE CROSSING,LN,-,1
+883,12/18/14,12,Burglary,12D10,Residence or House,8800-8899,CLEARBOURNE,LN,-,1
+884,12/19/14,10,Theft,12D10,Driveway,10700-10799,VATANI,DR,-,1
+889,11/14/14,9,Theft,12D10,"Road, Street, or Sidewalk",10000-10099,ALMEDA GENOA,RD,-,1

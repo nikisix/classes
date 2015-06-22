@@ -1,0 +1,155 @@
+,Date,Hour,Offense Type,Beat,Premise,BlockRange,StreetName,Type,Suffix,# offenses
+0,1/24/15,8,Auto Theft,10H10,Residence or House,2100-2199,CANAL,ST,-,1
+1,1/25/15,13,Theft,10H10,Bus Stop,3900-3999,CANAL,ST,-,1
+2,1/26/15,5,Auto Theft,10H10,Apartment,2300-2399,COMMERCE,ST,-,1
+4,1/27/15,18,Theft,10H10,"Multi-Plex Home (Duplex,Triplex Etc.)",5600-5699,SHERMAN,-,-,1
+6,1/31/15,16,Theft,10H10,"Road, Street, or Sidewalk",3300-3399,ENGELKE,-,-,1
+7,1/2/15,22,Auto Theft,10H10,Restaurant or Cafeteria Parking Lot,2800-2899,NAVIGATION,-,-,1
+8,1/4/15,16,Burglary,10H10,Residence or House,300-399,BRYAN,-,N,1
+9,1/5/15,1,Burglary,10H10,Residence or House,6200-6299,INDUSTRIAL,WAY,-,1
+10,1/6/15,10,Auto Theft,10H10,Auto Repair,3900-3999,CANAL,ST,-,1
+11,1/7/15,0,Robbery,10H10,"Road, Street, or Sidewalk",2100-2199,CANAL,ST,-,1
+12,1/8/15,10,Auto Theft,10H10,Residence or House,200-299,LOCKWOOD,DR,-,1
+14,1/10/15,9,Burglary,10H10,Auto Repair,100-199,MILBY,ST,N,1
+15,1/11/15,20,Robbery,10H10,Restaurant or Cafeteria,3400-3499,NAVIGATION,-,-,1
+16,1/12/15,9,Theft,10H10,Maintenance or Building Services,5800-5899,TEXAS,ST,-,1
+19,1/13/15,0,Burglary,10H10,Vehicle/Auto Sales/Lease/Auto Parts Store,4600-4699,CANAL,ST,-,1
+21,1/15/15,9,Burglary,10H10,"Factory, Manufacturing, or Industrial",100-199,LATHAM,ST,N,1
+23,1/16/15,17,Auto Theft,10H10,Other Parking Lot,3800-3899,HARRISBURG,-,-,1
+25,1/19/15,19,Theft,10H10,Vehicle/Auto Sales/Lease/Auto Parts Store,4700-4799,HARRISBURG,-,-,1
+26,1/20/15,12,Theft,10H10,Bar or Night Club,3000-3099,CANAL,ST,-,1
+27,1/21/15,8,Burglary,10H10,Commercial Building,300-399,VELASCO,-,-,1
+30,1/30/15,22,Robbery,10H20,"Road, Street, or Sidewalk",5000-5099,PARK,DR,-,1
+32,1/29/15,0,Theft,10H20,"Road, Street, or Sidewalk",4400-4499,WALKER,ST,-,1
+36,1/23/15,16,Theft,10H20,Residence or House,5100-5199,BELL,ST,-,1
+42,1/3/15,15,Burglary,10H20,Convenience Store,5300-5399,POLK,-,-,1
+53,1/17/15,14,Theft,10H20,Commercial Parking Lot or Garage,2100-2199,ERNESTINE,ST,-,1
+55,1/18/15,6,Burglary,10H20,Bar or Night Club,800-899,DUMBLE,ST,-,1
+69,1/28/15,14,Rape,10H30,"Vacant Single Occ Resd(House,Townhs,Dplex)",1700-1799,ADEN MIST,DR,-,1
+76,9/28/14,11,Theft,10H30,Auto Repair,3600-3699,GULF,FWY,-,1
+77,12/27/14,16,Burglary,10H30,Residence or House,1700-1799,ADEN MIST,DR,-,1
+78,12/31/14,1,Theft,10H30,Commercial Parking Lot or Garage,900-999,ST EMANUEL,-,-,1
+82,1/1/15,9,Robbery,10H30,"Road, Street, or Sidewalk",2000-2099,SCOTT,-,-,1
+95,1/9/15,9,Theft,10H30,"Road, Street, or Sidewalk",1200-1299,PALMER,ST,-,1
+110,10/18/13,9,Theft,10H40,"Road, Street, or Sidewalk",3000-3099,CAROLINE,ST,-,1
+111,12/1/14,18,Theft,10H40,Residence or House,1700-1799,HOLMAN,-,-,1
+193,1/14/15,16,Theft,10H40,"Road, Street, or Sidewalk",2100-2199,MAIN,ST,-,1
+216,1/22/15,9,Theft,10H50,Miscellaneous Business (Non-Specific),2100-2199,DOWLING,ST,-,1
+235,2/1/13,14,Theft,10H50,"Other, Unknown, or Not Listed",UNK,DOWLING,ST,-,1
+290,11/25/14,13,Aggravated Assault,10H60,Residence or House,3800-3899,WENTWORTH,-,-,1
+401,12/6/14,17,Theft,10H70,,6200-6299,HERMANN PARK,-,-,1
+402,12/21/14,15,Burglary,10H70,Apartment,6300-6399,ALMEDA,RD,-,1
+403,12/22/14,11,Theft,10H70,Hospital,6500-6599,FANNIN,ST,-,1
+404,12/23/14,10,Theft,10H70,Apartment Parking Lot,6300-6399,ALMEDA,RD,-,1
+405,12/24/14,12,Theft,10H70,Apartment,UNK,HERMANN MUSEUM,CIR,-,1
+490,12/30/14,15,Theft,10H80,"Electronics Store, Electrical Supplies",6000-6099,KIRBY,DR,-,1
+492,12/2/07,15,Theft,10H80,"Parks and Recreation, Zoo, Swimming Pool",1000-1099,BISSONNET,ST,-,1
+626,12/8/14,16,Theft,11H10,Department or Discount Store,7000-7099,LAWNDALE,-,-,1
+721,12/28/14,20,Aggravated Assault,11H20,Apartment,7400-7499,PLUM CREEK,DR,-,1
+723,9/14/12,12,Theft,11H20,Warehouse,8100-8199,LAWNDALE,-,-,1
+882,12/15/14,11,Theft,12D10,Residence or House,10400-10499,KINSDALE CROSSING,LN,-,1
+883,12/18/14,12,Burglary,12D10,Residence or House,8800-8899,CLEARBOURNE,LN,-,1
+884,12/19/14,10,Theft,12D10,Driveway,10700-10799,VATANI,DR,-,1
+889,11/14/14,9,Theft,12D10,"Road, Street, or Sidewalk",10000-10099,ALMEDA GENOA,RD,-,1
+1142,1/27/12,20,Burglary,12D20,Residence or House,10800-10899,EDDYROCK,DR,-,1
+1234,12/13/14,19,Theft,12D30,Residence or House,12500-12599,GREEN,DR,S,1
+1236,12/11/14,11,Auto Theft,12D30,Vehicle/Auto Sales/Lease/Auto Parts Store,11700-11799,GULF,FWY,-,1
+1348,1/6/14,14,Theft,12D50,Apartment,300-399,CYBERONICS,BLVD,-,1
+1369,6/1/14,15,Aggravated Assault,12D60,"Church, Synagogue, or Temple Parking Lot",15500-15599,EL CAMINO REAL,-,-,1
+1370,12/12/14,12,Theft,12D60,Apartment,1400-1499,EL CAMINO VILLAGE,DR,-,1
+1392,8/1/14,9,Aggravated Assault,12D70,Residence or House,200-299,EL DORADO,BLVD,-,1
+1393,11/20/14,13,Theft,12D70,Apartment,19100-19199,GLENWEST,DR,-,1
+1608,12/29/14,11,Theft,13D20,Other Parking Lot,8700-8799,BROADWAY,ST,-,1
+1613,10/31/14,12,Theft,13D20,Residence or House,7300-7399,BRACE,ST,-,1
+1689,1/7/14,16,Theft,13D20,"Daycare, Child Care, or Kindergarten",7600-7699,BELLFORT,ST,-,1
+1720,1/2/14,0,Theft,13D20,"Road, Street, or Sidewalk",7900-7999,GLENHEATH,ST,-,1
+1806,6/2/14,14,Theft,13D30,,8200-8299,KOPMAN,DR,-,1
+1807,12/5/14,20,Auto Theft,13D30,Commercial Parking Lot or Garage,7600-7699,AIRPORT,BLVD,-,1
+1891,12/10/14,22,Theft,14D10,Apartment,UNK,GRIGGS,-,-,1
+2409,1/23/14,22,Burglary,15E20,Residence or House,5800-5899,DUXBURY,DR,-,1
+2414,9/25/14,9,Theft,15E20,High School,UNK,CHIMNEY ROCK,RD,-,1
+2460,9/1/13,14,Theft,15E30,Nursing Home,4100-4199,BRAESWOOD,BLVD,N,1
+2461,8/9/06,13,Theft,15E30,,7800-7899,STELLA LINK,-,-,1
+2462,9/18/14,17,Theft,15E30,Residence or House,4000-4099,WOODFIN,-,-,1
+2612,11/27/14,19,Rape,15E40,Apartment,10200-10299,BUFFALO SPEEDWAY,-,-,1
+2613,7/28/14,10,Theft,15E40,,8100-8199,EL MUNDO,ST,-,1
+2615,5/8/14,9,Rape,15E40,Apartment,8200-8299,CAMBRIDGE,ST,-,1
+2719,10/3/14,11,Auto Theft,16E10,"Other, Unknown, or Not Listed",13700-13799,ALMEDA,RD,-,1
+2810,12/20/14,9,Theft,16E20,Residence or House,3100-3199,KELLING,DR,-,1
+2886,2/1/14,9,Theft,16E30,Residence or House,6500-6599,BROOKFIELD,DR,-,1
+2965,11/1/14,11,Auto Theft,16E40,Driveway,7100-7199,CASTLEVIEW,LN,-,1
+2966,11/26/14,11,Theft,16E40,Residence or House,7300-7399,CHASEWOOD,DR,-,1
+2971,12/26/14,14,Burglary,16E40,Residence or House,4800-4899,BEECHAVEN,DR,-,1
+3038,12/14/14,12,Theft,17E10,Apartment,5400-5499,RENWICK,-,-,1
+3343,11/19/14,11,Theft,17E30,Commercial Building,10700-10799,SOUTHWEST,FWY,-,1
+3344,11/11/14,16,Auto Theft,17E30,Apartment Parking Lot,8700-8799,GUSTINE,LN,-,1
+3347,12/16/14,11,Theft,17E30,"Field, Woods, Forest, Park",12300-12399,RICEVILLE SCHOOL,RD,-,1
+3399,1/1/14,11,Theft,17E30,Apartment,8700-8799,BRAESWOOD,BLVD,S,1
+3496,6/14/14,10,Theft,17E40,"Factory, Manufacturing, or Industrial",11600-11699,FAIRMONT,ST,-,1
+3497,9/5/14,9,Auto Theft,17E40,Middle School,6300-6399,BRAESWOOD,BLVD,S,1
+3523,1/1/12,14,Rape,17E40,Apartment,11000-11099,LARKWOOD,DR,-,1
+3696,9/1/14,7,Theft,18F20,Residence or House,5400-5499,INWOOD,-,-,1
+3697,6/15/10,11,Theft,18F20,,2500-2599,POST OAK,-,-,1
+3698,5/1/00,11,Theft,18F20,,5000-5099,WESTHEIMER,RD,-,1
+3840,10/2/14,14,Theft,18F30,Commercial Building,6400-6499,WINDSWEPT,LN,-,1
+4038,5/30/14,12,Theft,18F40,Office Building,UNK,FONDREN,RD,-,1
+4040,9/6/14,15,Theft,18F40,Vehicle/Auto Sales/Lease/Auto Parts Store,8100-8199,RICHMOND,AVE,-,1
+4343,1/4/14,7,Auto Theft,18F60,Apartment,8300-8399,SANDS POINT,DR,-,1
+4406,12/17/14,10,Theft,19G10,Residence or House,8700-8799,WILCREST,DR,-,1
+4699,10/30/13,13,Theft,19G30,"Other, Unknown, or Not Listed",13000-13099,LEADER,ST,-,1
+4782,1/24/14,11,Burglary,19G40,Rental Storage Facility,8400-8499,COOK,RD,-,1
+4796,6/12/12,9,Theft,19G40,Grocery Store or Supermarket,9500-9599,KIRKWOOD,DR,S,1
+4798,5/14/14,20,Theft,19G40,Apartment,11700-11799,GLEN,-,S,1
+4993,5/24/13,11,Theft,1A10,"Amusement Park, Bowling Alley, Skate Rink",400-499,BAGBY,ST,-,1
+4995,8/15/14,17,Theft,1A10,Commercial Building,400-499,LOUISIANA,ST,-,1
+4996,9/28/08,15,Theft,1A10,,500-599,CRAWFORD,ST,-,1
+4997,11/23/14,14,Theft,1A10,Bar or Night Club Parking Lot,1300-1399,TRAVIS,-,-,1
+5130,11/28/14,13,Theft,1A20,Bar or Night Club,UNK,BRAZOS,ST,-,1
+5133,6/12/10,14,Theft,1A20,Restaurant or Cafeteria,1300-1399,MONTROSE,BLVD,-,1
+5387,12/25/14,14,Theft,1A30,"Road, Street, or Sidewalk",1700-1799,MAIN,ST,-,1
+5570,8/25/14,15,Theft,1A50,Convenience Store Parking Lot,UNK,GREENWAY PLAZA,DR,-,1
+5571,8/12/14,14,Theft,1A50,Commercial Parking Lot or Garage,3100-3199,WESLAYAN,-,-,1
+5696,7/1/14,14,Theft,20G10,Apartment,6000-6099,RANCHESTER,DR,-,1
+5698,5/1/14,15,Theft,20G10,Apartment Parking Lot,9200-9299,CLAREWOOD,DR,-,1
+5817,12/3/14,0,Burglary,20G20,Apartment,10500-10599,VALLEY FORGE,DR,-,1
+6015,7/3/13,16,Theft,20G40,Driveway,11600-11699,TRAILMONT,DR,-,1
+6016,8/13/13,14,Burglary,20G40,Residence or House,11600-11699,BRIAR ROSE,DR,-,1
+6061,8/8/08,15,Theft,20G50,,300-399,MEMORIAL CITY,WAY,-,1
+6062,11/21/14,17,Theft,20G50,Residence or House,13900-13999,KINGSRIDE,LN,-,1
+6247,11/23/13,18,Rape,20G60,Residence or House,14200-14299,KELLYWOOD,LN,-,1
+6291,11/30/14,12,Theft,20G70,Residence or House,2400-2499,BRIARWEST,BLVD,-,1
+6399,8/24/14,15,Rape,20G80,Apartment,1900-1999,ELDRIDGE,PKWY,-,1
+6467,11/10/14,8,Auto Theft,21I50,Commercial Parking Lot or Garage,17300-17399,PINE CUT,-,-,1
+6503,12/9/14,8,Auto Theft,23J50,Vehicle/Auto Sales/Lease/Auto Parts Store,7700-7799,AIRPORT,BLVD,-,1
+6634,2/8/14,11,Theft,2A10,Miscellaneous Business (Non-Specific),1200-1299,HAYS,-,-,1
+6750,10/1/14,9,Theft,2A30,Vehicle/Auto Sales/Lease/Auto Parts Store,1200-1299,SHEPHERD,DR,N,1
+7221,7/12/14,23,Murder,3B10,,4500-4599,TULSA,-,-,1
+7378,1/17/80,14,Theft,3B10,Apartment Parking Lot,4900-4999,DACOMA,ST,-,1
+7419,6/25/14,10,Theft,3B30,"Other, Unknown, or Not Listed",700-799,THORNTON,-,-,1
+7462,12/2/14,11,Theft,3B40,"Road, Street, or Sidewalk",5000-5099,YALE,-,-,1
+7705,12/30/13,18,Theft,4F10,Restaurant or Cafeteria,9700-9799,KATY,FWY,-,1
+7835,11/4/14,13,Auto Theft,4F30,"Other, Unknown, or Not Listed",11800-11899,KATY,FWY,-,1
+7978,10/17/14,8,Theft,5F20,Warehouse,3800-3899,HOLLISTER,RD,-,1
+8232,11/15/05,11,Theft,5F40,,2000-2099,WILLOWBROOK MALL,-,-,1
+8233,9/15/14,17,Auto Theft,5F40,Hotel or Motel Parking Lot,13200-13299,CHAMPIONS CENTRE,DR,-,1
+8391,5/1/12,18,Theft,6B10,Apartment,300-399,LITTLE YORK,RD,W,1
+8392,11/15/14,9,Theft,6B10,Grocery Store or Supermarket,UNK,AIRLINE DR,-,-,1
+8393,11/18/14,16,Auto Theft,6B10,"Road, Street, or Sidewalk",6100-6199,AIRLINE,DR,-,1
+8400,1/31/14,11,Theft,6B10,Hotel or Motel Parking Lot,UNK,AIRLINE,-,-,1
+8544,1/8/14,13,Theft,6B20,Residence or House,6500-6599,TUSKEGEE,-,-,1
+8606,11/3/14,17,Rape,6B30,Apartment,6200-6299,TIDWELL,RD,W,1
+8947,1/13/14,6,Theft,6B50,Driveway,15100-15199,WELLMAN,LN,-,1
+8968,2/14/12,15,Theft,6B60,,17100-17199,IMPERIAL VALLEY,DR,-,1
+9470,12/4/14,12,Theft,7C40,"Vacant Single Occ Resd(House,Townhs,Dplex)",2100-2199,CHARLES,RD,-,1
+9521,10/25/14,10,Theft,7C50,Apartment Rental Office,14800-14899,CROSSWINDS,DR,-,1
+9588,11/8/14,9,Theft,8C10,Service or Gas Station,7100-7199,TIDWELL,RD,-,1
+9589,11/29/14,10,Burglary,8C10,Residence or House,8800-8899,COMPTON,-,-,1
+9787,1/5/14,19,Theft,8C50,"Road, Street, or Sidewalk",9800-9899,TRUMPET,-,-,1
+9836,9/2/14,19,Murder,8C60,"Other, Unknown, or Not Listed",10600-10699,WOLBROOK,-,-,1
+9837,9/11/14,12,Theft,8C60,Apartment,7100-7199,PARKER,RD,-,1
+9839,11/6/14,8,Theft,8C60,"Vacant Single Occ Resd(House,Townhs,Dplex)",5800-5899,NORTHERN OAK,ST,-,1
+9887,7/7/14,9,Theft,9C10,Restaurant or Cafeteria,8700-8799,CANDY,-,-,1
+9967,12/15/15,15,Burglary,9C30,Commercial Building,10200-10299,LOOP,-,N,1
+10172,1/14/14,14,Theft,9C40,"Physician, Doctor, Dentist's Office",12900-12999,EAST,FWY,-,1
+10183,5/17/14,9,Murder,UNK,,400-499,NORTH SAM HOUSTON,PKWY,-,1
+10184,5/13/14,13,Burglary,UNK,Residence or House,500-599,ILLINOIS,AVE,-,1

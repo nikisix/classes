@@ -7,8 +7,8 @@ By Nick Tomasino
 
 [[ Navigation ]]
     #Terminal Navigation
-        new tab: ctl+t
-        new window: ctl+n
+        new tab: cmd+t
+        new window: cmd+n
         move between tabs: cmd+shift+nav_arrow(left or right)
         move between windows: shift+nav_arrow(left or right)
       
