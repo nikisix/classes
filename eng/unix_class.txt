@@ -45,6 +45,7 @@ By Nick Tomasino
     #Take a sample file
         sample file from beginning of file: head -n(some_number) file1_name > output_file_name
         sample file from end of file: tail -n(some_number) file1_name > output_file_name
+        monitor log files: tail -f log_file  (displays, in realtime, any new lines added to the file)
     #View file without opening entire file
         less file_name
         less navigation: 

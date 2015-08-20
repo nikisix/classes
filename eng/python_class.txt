@@ -354,6 +354,10 @@ array([[ 0.78782888,  0.13322582],
                         print 'Error with column: '+c+'\nIt must be composed of all numbers.'
                 sys.exit(2)
 
+    [[ CATEGORICAL_VARIABLES ]]
+        y, X = patsy.dmatrices('Leaver ~ RegHrsAttended + RegHrsAbsent + C(ACCOMMODATN_BILINGUAL_DICT) + C(HOMELESS) +\
+            C(Gifted) + C(LunchStatus)', df, return_type="dataframe")
+
     [[ TYPE_CONVERSION ]]
         df[['two', 'three']] = df[['two', 'three']].astype(float)
 
