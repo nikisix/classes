@@ -287,7 +287,7 @@ By Nick Tomasino
 
 [[ COMMAND_LINE_INTERFACING ]]
     import argparse
-    parser = argparse.ArgumentParser(description=discription_message)
+    parser = argparse.ArgumentParser(description=description_message)
     parser.add_argument("-f", "--file", required=True, dest="input_file", help="file to import")
     parser.add_argument("-m", "--max_percentage", dest="max_percentage", type=float, default=.6, help="drop rows with..")
     args = parser.parse_args()
@@ -340,6 +340,11 @@ array([[ 0.78782888,  0.13322582],
         #drop duplicate entries in specified cols
         df = df.drop_duplicates(subset=['col1', 'col2'], take_last=False, inplace=False)
 
+        #sometimes a column get's pulled in as a string if it has missing (usually None) values
+        #attempts to cast it directly with (e.g. d.astype(np.float64)) will fail b/c the column has 
+        #already been typed as a string or object column
+        d[col1] = d[col1].convert_objects(convert_numeric=True)
+
     [[ INPUT_DATA_VALIDATION ]]
         #if all data in a frame isn't numeric, it this will catch the error, then iterate through all columns
         def validate_data(df):
@@ -348,11 +353,28 @@ array([[ 0.78782888,  0.13322582],
             except TypeError:
                 for c in df.columns:    
                     try:
-                            print c
-                            print all(np.isfinite(df[c]))
+                        print all(np.isfinite(df[c])),
+                        print c
                     except TypeError:
                         print 'Error with column: '+c+'\nIt must be composed of all numbers.'
                 sys.exit(2)
+
+        def validate_nulls(df):
+            for c in df.columns:
+                if any(df[c].isnull()): print c+' has nulls'
+
+        def validate_column(df, c):
+            i = 0
+            for row in df[c]:
+                try: 
+                    np.isfinite(row)
+                except TypeError:
+                    print 'row {1} of column {2} not finite: {0}'.format(row, i,c)
+                i+=1
+
+        for t in da.dtypes:
+            if t!=np.float64: print t
+
 
     [[ CATEGORICAL_VARIABLES ]]
         y, X = patsy.dmatrices('Leaver ~ RegHrsAttended + RegHrsAbsent + C(ACCOMMODATN_BILINGUAL_DICT) + C(HOMELESS) +\

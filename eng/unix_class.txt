@@ -55,6 +55,12 @@ By Nick Tomasino
                 previous instance: p
             jump pages: space_bar
 
+[[ Keyboard_Shortcuts ]]
+    ctrl-a cursor to beginning of line
+    ctrl-e cursor to end of line
+    ctrl-w Cut the last word
+    ctrl-_ Undo
+
 [[ Pipeing ]]
     #Output one command to another command 
         command1 | command2
