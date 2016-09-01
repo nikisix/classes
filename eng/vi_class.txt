@@ -32,11 +32,15 @@ By NickiVI
         p - paste the clipboard over the highlighted block of text
 
 [[ Copy and Paste ]]
-    copy(yank) line - yy
-    paste line      - p
-    copy segment    - v+y 
-    paste segment   - p
-    pasting on multiple lines - ctrl+v, I, <character>, 2xESC
+    yy   - copy(yank) line 
+    p    - paste line      
+    v+y  - copy segment    
+    p    - paste segment   
+    ctrl+v, I, <character>, 2xESC - pasting on multiple lines
+    :set paste - when pasting a long block of text into a buffer from the clipboard
+    "ay  - yank text into the 'a' buffer instead of the default '*' buffer
+    "ap  - paste from the a buffer instead of from the clipboard (*) buffer
+    "_dd - delete text overwrites the '_' buffer instead of the clipboard (*) buffer
 
 [[ Indending multiple lines - V+>, V+< ]]
 [[ Replacing letter under cursor - r ]]

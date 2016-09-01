@@ -146,3 +146,10 @@ Review the history of both branches
 Create a conflict between the branches by changing the same file on each branch
 Merge and resolve the conflict
 Save and push the merge result
+
+
+
+[[ MISC ]]
+git rm -r —cached dir_name
+had a directory actually needed to remove from my branch but had already commited changes but was able to remove it by running that and then it was actually ignored. thought id share
+yeah… i had pushed a branch with client data that i was testing then added it to… whoops lol
