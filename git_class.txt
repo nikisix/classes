@@ -131,23 +131,54 @@ Outputs metadata and content changes of the specified commit
 Generate a public ssh key and publish it to GitHub/Unfuddle/Interns
 Initialize a repo
 Add files to the repo
-Diff the added files
-Create a commit and message
-Push the commit to the test repo
+Commit the files
+Make some changes to the files
+Diff all added files
+Diff one file
+Dry add changes - to see what will be added without actually adding
+Dry add changes all files in current and subdirectories
+Add changes
+Commit the changes
 
-[[ Exercise Part 2 ]]
+[[ Exercise 2 - Branching ]]
+Run example1
 Create a dev branch off of the master branch
 Change some files in the new branch
-Stash the changes
-Checkout master branch
-Checkout dev branch
-Unstash the changes
-Review the history of both branches
+add changes
+commit changes
+check dev status
+review history of dev
+checkout master
+check master history
+cat master files - notice prior version
+merge dev into master
+cat master files - notice current version
+delete dev
+
+[[ Exercise 3 - Stashing ]]
+Run example1
+Create a dev branch off of the master branch
+Change some files in the new branch
+add changes
+commit changes
+check dev status
+stash changes
+check dev status
+checkout master
+cat master files - notice prior version
+check status
+check master history
+checkout dev
+pop stash
+review history of dev
+checkout master
+merge dev into master
+delete dev
+
+[[ Exercise 4 ]]
+Run example 2
 Create a conflict between the branches by changing the same file on each branch
 Merge and resolve the conflict
-Save and push the merge result
-
-
 
 [[ MISC ]]
 git rm -r —cached dir_name
