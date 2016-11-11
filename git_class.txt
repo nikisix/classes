@@ -175,10 +175,10 @@ checkout master
 merge dev into master
 delete dev
 
-[[ Exercise 4 ]]
+[[ Exercise 4 - Conflicts ]]
 Run example 2
 Create a conflict between the branches by changing the same file on each branch
-Merge and resolve the conflict
+Merge and resolve the conflict using a diff tool
 
 [[ MISC ]]
 git rm -r —cached dir_name

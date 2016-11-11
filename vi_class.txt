@@ -66,11 +66,18 @@ By NickiVI
     find-replace confirm - :%s/<find>/<replace>/gc
 
 [[ Multi_Screen_Editing ]]
-    vertical split - :vsplit <filename>
-    horizontal split - :split <filename>
-    switching windows - ctrl + h,j,k, or l
-    moving windows around - <ctrl+w> + H,J,K, or L
-    vi also has tab capabilities, but I have never used them.
+    Two options: screen-splits and buffers. learn to use both
+    [[ Splits ]]
+        vertical split - :vsplit <filename>
+        horizontal split - :split <filename>
+        switching windows - <ctrl+w> + h,j,k, or l
+        switching windows (6-vim) - ctrl + h,j,k, or l
+        moving windows around - <ctrl+w> + H,J,K, or L
+    [[ Buffers ]]
+        bnext/bprev - go to next/previous buffer (map these to something)
+        buffers - list all open buffers
+        buffer + number - switch to that buffer number. (6-vim maps the previous two commands to 'b')
+        close all but current buffer - %bd | e#
 
 [[ Running_os_commands: ]]
     :!<linux_command>

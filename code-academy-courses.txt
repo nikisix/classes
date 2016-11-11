@@ -3,3 +3,4 @@ https://www.codecademy.com/learn/learn-sql
 https://www.codecademy.com/learn/sql-table-transformation
 https://www.codecademy.com/learn/python
 https://www.codecademy.com/learn/sql-analyzing-business-metrics
+https://www.codecademy.com/learn/learn-git
