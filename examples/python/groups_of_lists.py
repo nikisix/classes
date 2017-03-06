@@ -8,14 +8,16 @@ ie; this would produce
 myNewList = [[1,2,2], [3], [5]]
 '''
 import scipy as sp 
-a = [int(round(i * 5)) for i in sp.rand(30).tolist()]
+MAXITEMS = 100
+
+target = 20 #"target val"
+
+a = [int(round(i * target)) for i in sp.rand(100).tolist()]
 #a = [1, 1, 4, 2, 3, 5, 2, 4, 3, 2, 1]
 #a = [1, 1, 4, 2, 3, 5, 2]
 #a = [1, 5, 2, 3]
 
 a = sorted(a, reverse=True)
-target = 5 #"target val"
-
 res = []
 temp = []
 i = 0
